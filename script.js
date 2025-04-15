@@ -1,5 +1,5 @@
-const popover = document.getElementById("monpopover");
-const toggleBtn = document.getElementById("toggleBtn");
+const popover1 = document.getElementById("monpopover1");
+const toggleBtn1 = document.getElementById("toggleBtn1");
 
 const toggleBtn2 = document.getElementById("toggleBtn2");
 const popover2 = document.getElementById("monpopover2");
@@ -11,20 +11,20 @@ function supportsPopover() {
 
 if (supportsPopover()) {
   // Définit l'élément <div> comme étant un popover automatique
-  popover.popover = "auto";
+  popover1.popover = "auto";
   // Définit le bouton comme étant le contrôle du popover
-  toggleBtn.popoverTargetElement = popover;
+  toggleBtn1.popoverTargetElement = popover1;
 
   // Définit que le bouton peut afficher/masquer le popover
-  toggleBtn.popoverTargetAction = "toggle";
+  toggleBtn1.popoverTargetAction = "toggle";
 
   popover2.popover = "auto";
   toggleBtn2.popoverTargetElement = popover2;
   toggleBtn2.popoverTargetAction = "toggle";
 
 } else {
-  popover.textContent = "L'API Popover n'est pas prise en charge.";
-  toggleBtn.hidden = true;
+  popover1.textContent = "L'API Popover n'est pas prise en charge.";
+  toggleBtn1.hidden = true;
 
   popover2.textContent = "L'API Popover n'est pas prise en charge.";
   toggleBtn2.hidden = true;

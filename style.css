@@ -90,7 +90,7 @@ ul {
   }
 }
 #logo {
-  width: 4%;
+  width: 10%;
   object-fit: cover;
 }
 
@@ -223,7 +223,7 @@ footer {
 
 /* ------------------------JS----------------------------------------- */
 
-#monpopover,
+#monpopover1,
 #monpopover2 {
   text-align: center;
   background-color: #21242a;
