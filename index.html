@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>Portfolio Hasna Kharbouche</title>
 
     <link rel="stylesheet" href="style.css">
 
@@ -19,18 +19,15 @@
         rel="stylesheet">
 </head>
 
-
 <body>
     <!-- ---------------------------HEADER--------------------------------------------------------- -->
     <header>
         <nav class="grey">
-            <img id="logo" src="assets/logo.png" alt="photo logo">
+            <a href="index.html"><img id="logo" src="assets/logo.png" alt="photo logo"></a>
 
             <ul class="grey">
                 <li><a href="#projets">Mes Projets</a></li>
-                <li><a href="#competences">Compétences</a></li>
                 <li><a href="#aPropos">A Propos</a></li>
-                <li><a href="#monParcours">Mon Parcours</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </nav>
@@ -44,24 +41,30 @@
                 <p class="h2Pstyle" class="beigeDore">Collaborative</p>
                 <h1>INTEGRATRICE WEB</h1>
             </section>
+        </section>
 
             <!--------------------- SECTION PROJETS ------------------->
+           <section id="projet" class="marginBottomSection">
             <section>
-                <p class="h2Pstyle"  class="beigeDore">Ambitieuse</p>
-                <h2 id="projets" >Mes Projets</h2>
+                <p class="h2Pstyle"  class="beigeDore" id="projets" >Ambitieuse</p>
+                <h2 >Mes Projets</h2>
             </section>
 
             <section id="SectionCard">
                 <article class="card">
-                    <img src="assets/projet1.png" alt="photo projet">
+                    <img src="" alt="photo projet">
                     <h3>Maquette N°1</h3>
                     <p>Intégration d'une maquette.</p>
-                    <button>Explorer</button>
+                    <button id="toggleBtn">En Savoir plus -> </button>
+                    <div id="monpopover" class="card">Intégration d'une maquette avec HTML et CSS
+                        <img src="./assets/projet1.png" alt="maquette">
+                        <a href=""></a>
+                    </div>
+
                 </article>
 
                 <article class="card">
-                    <img src="assets/projet2.png" alt="photo projet">
-                    <img src="assets/projet2c.png" alt="photo projet">
+                    <img src="" alt="photo projet">
                     <h3>Maquette N°2</h3>
                     <p>Intégration.</p>
                     <button>Explorer</button>
@@ -97,18 +100,18 @@
         </section>
 
         <!-- --------------------SECTION A PROPOS-------------------- -->
-        <section id="aPropos" class="grey">
-            <img id="imgProfil" class="card" src="assets/imgProfil1.png" alt="">
-            <section class="text">
+        <section id="aPropos" class="imgText" class="marginBottomSection">
+            <section>
                 <p class="h2Pstyle"  class="beigeDore">Résiliente</p>
                 <h2>Mieux me connaitre</h2>
                 <p></p>
             </section>
+            <img id="imgProfil" src="assets/imgProfil1.png" alt="">
         </section>
 
         <!---------------------SECTION PARCOURS----------------------- -->
 
-        <section id="monParcours" class="grey">
+        <section id="monParcours" class="imgText"  class="grey">
             <img src="assets/imgPuzzle.jpg" alt="photo décorative">
             <section class="text">
                 <p class="h2Pstyle"  class="beigeDore">Adaptable</p>
@@ -119,9 +122,9 @@
 
         <!----------------------SECTION CONTACT----------------------- -->
 
-        <section id="contact" class="grey">
-            <img src="assets/imgObjectif.png" alt="">
-            <section class="text">
+        <section id="contact" class="imgText">
+           
+            <section>
                 <p class="h2Pstyle"  class="beigeDore">Réaliste</p>
                 <h2>Mes Objectifs</h2>
 
@@ -149,27 +152,44 @@
                     <button id="button">Envoyer</button>
                 </form>
             </section>
+            <img src="assets/imgObjectif.png" alt="">
         </section>
 
     </main>
 
     <!-------------------------------- FOOTER ----------------------------------------------------->
-    <footer>
-        <section id="reseaux" class="grey">
+    <footer class="grey">
 
-            <figure id="iconReseau">
-                <img src="./assets/linkedin (1).png" alt="icône linkedin" />
-                <figcaption>Linkedin</figcaption>
-            </figure>
+        <section id="navFooter">
+            <a href="index.html"><img id="logo" src="assets/logo.png" alt="photo logo"></a>
+            <ul>
+                <li><a href="#projets">Mes Projets</a></li>
+                <li><a href="#competences">Mes Compétences</a></li>
+                <li><a href="#aPropos">A Propos</a></li>
+                <li><a href="#monParcours">Mon Parcours</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
         </section>
 
+<section id="contactFooter">
         <section id="mail">
-            <img id="logo" src="assets/logo.png" alt="photo logo">
             <a href="tél:0625563904">hasnakharbouchepro@gmail.com</a>
             <a href="tel:">Tél : 06 25 56 39 04</a>
         </section>
 
+            <section id="reseaux" class="grey">
+                <figure id="iconReseau">
+                    <a href="https://www.linkedin.com/in/hasnakharbouche/"><img id="logo" src="assets/linkedin (1).png" alt="photo logo"></a>
+                    <figcaption>Linkedin</figcaption>
+                </figure>
+            </section>
+       
+        </section>
+       
+
     </footer>
+
+   <script src="script.js"></script>
 </body>
 
 </html>
