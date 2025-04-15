@@ -55,8 +55,8 @@ blockquote {
   line-height: -1px;
 }
 
-.marginBottomSection{
-    margin-bottom: 15%;
+.marginBottomSection {
+  margin-bottom: 15%;
 }
 /* ----------------------------------------- */
 .beigeDore {
@@ -77,6 +77,9 @@ nav {
   a:hover {
     color: #c2a77d; /* Couleur au survol */
   }
+  a {
+    transition: color 0.3s ease; /* Pour une transition fluide */
+  }
 }
 ul {
   display: flex;
@@ -92,26 +95,35 @@ ul {
 }
 
 /* -----------------------------MAIN---------------------------------- */
-main{
-    align-items: center;
+main {
+  align-items: center;
   margin-left: 12%;
   margin-right: 12%;
   background-color: var(--black);
 }
 #h1 {
-    padding: 30%;
-    text-align: center;
-  }
-  #SectionCard {
-    display: flex;
-    justify-content: center;
-    gap: 5%;
-  }
+  padding: 30%;
+  text-align: center;
+}
+#SectionCard {
+  display: flex;
+  justify-content: center;
+  gap: 5%;
+}
 
 /* --------------PROJETS------------ */
-#projet{
-    width: 100%;
-    background-color: var(--grey);
+#projet {
+  width: 100%;
+  background-color: var(--grey);
+}
+button{
+    color: var(--beigeDore);
+    border: solid 1px #c2a77d;
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5%;
+background-color: #292c31;
 }
 
 .card {
@@ -148,8 +160,8 @@ main{
   }
 }
 
-#competences{
-    margin-bottom: 15%;
+#competences {
+  margin-bottom: 15%;
 }
 /* --------------PARCOURS------------- */
 #monParcours {
@@ -166,25 +178,25 @@ main{
   width: 50%;
 }
 
-#aPropos{
-    background-color: var(--grey);
+#aPropos {
+  background-color: var(--grey);
 }
 /*-------------- CONTACT_OBJECTIFS---------- */
 
-.imgText{
-    display: flex;
-width: 100%;
-margin-bottom: 15%;
+.imgText {
+  display: flex;
+  width: 100%;
+  margin-bottom: 15%;
 
-    img{
-        width: 50%;
-    }
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
 }
 
-#contact{
-    background-color: var(--grey);
+#contact {
+  background-color: var(--grey);
 }
-
 
 /* ----------FOOTER---------------- */
 footer {
@@ -195,6 +207,7 @@ footer {
 #iconReseau {
   img {
     width: 12%;
+    object-fit: cover;
   }
   figcaption {
     font-size: 13px;
@@ -204,15 +217,30 @@ footer {
 #navFooter {
   img {
     width: 15%;
+    object-fit: cover;
   }
 }
 
+/* ------------------------JS----------------------------------------- */
 
-
-
-#monpopover{
-    text-align: center;
-    background-color: #21242a;
-    color: #c2a77d;
-    text-decoration: none;
+#monpopover,
+#monpopover2 {
+  text-align: center;
+  background-color: #21242a;
+  color: #c2a77d;
+  text-decoration: none;
+  width: 30%;
+  margin: 5%;
+  a {
+    color: var(--beigeDore);
+    border: solid 1px #c2a77d;
+    padding: 2%;
+    padding-left: 8%;
+    padding-right: 8%;
+    margin-top: 5%;
+  }
+  img {
+    margin-top: 5%;
+    object-fit: cover;
+  }
 }
