@@ -1,89 +1,150 @@
-:root{
-    --grey: #292C31;
-    --black: #21242A;
-    --beige: #FFD1A6; 
-    --white:#f6f3f0;
-    --beigeDore: #C2A77D;
-
- }
-
-*{
-    margin: 0%;
-    padding: 0%;
-    list-style: none;
-    text-decoration: none;
-    color: var(--white);
-    font-family: "IBM Plex Sans", sans-serif;
+:root {
+  --grey: #292c31;
+  --black: #21242a;
+  --white: #f0edea;
+  --beigeDore: #c2a77d;
 }
 
-.grey{
-    background-color: var(--grey);
+* {
+  margin: 0%;
+  padding: 0%;
+  list-style: none;
+  text-decoration: none;
+  color: var(--white);
+  font-family: "IBM Plex Sans", sans-serif;
+  font-weight: 400;
 }
 
-body{
-    background-color: var(--black);
+html,
+.root {
+  font-size: 18px;
+  line-height: 23px;
+}
+body {
+  background-color: var(--black);
+  font-size: 18px;
+  line-height: 23px;
+  /* max-width: 560px; */
+  margin: auto;
+}
+
+h1,
+.h1 {
+  font-size: 92px;
+  line-height: 92px;
+  margin-top: 23px;
+  margin-bottom: 46px;
+}
+h2,
+.h2 {
+  font-size: 54px;
+  line-height: 69px;
+  margin-top: 23px;
+  margin-bottom: 23px;
+}
+p,
+blockquote {
+  margin-top: 0px;
+  margin-bottom: 23px;
+}
+
+.h2Pstyle {
+  color: var(--beigeDore);
+  text-align: left;
+  font-size: x-large;
+  line-height: 0px;
+}
+/* ----------------------------------------- */
+.beigeDore {
+  color: var(--beigeDore);
+}
+
+.grey {
+  background-color: var(--grey);
 }
 /*---------------------------- HEADER-------------------------------- */
 nav {
-    display: flex; /* Met les éléments en ligne */
-    justify-content: space-between; /* Espace entre le logo et la liste */
-    align-items: center; /* Alignement vertical */ 
+  display: flex; /* Met les éléments en ligne */
+  justify-content: space-between; /* Espace entre le logo et la liste */
+  align-items: center; /* Alignement vertical */
+  cursor: pointer;
+  position: fixed;
+  width: 100%;
+  a:hover {
+    color: #c2a77d; /* Couleur au survol */
+  }
 }
-
 ul {
-    display: flex;
-    justify-content: space-around; /* Espace entre les liens */
-    width: 33%;
+  display: flex;
+  justify-content: space-around; /* Espace entre les liens */
+  width: 33%;
+  a {
+    font-weight: 500;
+  }
 }
-#logo{
-    width: 5%;
-object-fit: cover;
+#logo {
+  width: 4%;
+  object-fit: cover;
 }
 
 /* -----------------------------MAIN---------------------------------- */
 
 /* --------------PROJETS------------ */
-.card {
-    color: #333333;
-    box-shadow: 0 4px 15px 5px #00000029;
-    width: 25%;
-    padding: 3%;
-    border-radius: 2%;
-    img {
-      width: 100%;
-      height: auto;
-      border-radius: 2%;
-      aspect-ratio: 1.5; /* Assure un ratio carré. On aurait pu mettre height 320px */
-      object-fit: cover;
-      margin-bottom: 5%;
-    }
+#h1 {
+  padding: 25%;
+  text-align: center;
 }
 
+.card {
+  color: #333333;
+  box-shadow: 0 4px 15px 5px #5a575729;
+  width: 20%;
+  padding: 3%;
+  border-radius: 2%;
+  img {
+    width: 100%;
+    height: 100%;
+    border-radius: 2%;
+    aspect-ratio: 1; /* Assure un ratio carré. On aurait pu mettre height 320px */
+    object-fit: cover;
+    margin-bottom: 5%;
+  }
+}
+
+#SectionCard{
+    display: flex;
+    justify-content:center;
+    gap: 5%;
+}
 /* ----------------COMPETENCE------- */
 .figCap {
-    border: solid 1px;
-    border-color:var(--grey);
-    box-shadow: 10px 10px 10px rgb(68, 67, 67);
+  border: solid 1px;
+  border-color: var(--grey);
+  box-shadow: 10px 10px 10px rgb(68, 67, 67);
+  width: 20%;
+  padding: 1%;
+  text-align: center;
+  img {
     width: 20%;
-    padding: 1%;
-    text-align: center;
-    img {
-      width: 20%;
-    }
-  
-    figCaption {
-      font-size: 14px;
-      text-align: center;
-      margin-top: 5%;
-    }
   }
 
-/* --------------PARCOURS------------- */
-  #parcours{
-    width: 100%;
-    img{
-        width: 50%;
-  object-fit: cover;
-    }
+  figCaption {
+    font-size: 14px;
+    text-align: center;
+    margin-top: 5%;
   }
-  
+}
+
+/* --------------PARCOURS------------- */
+#parcours {
+  width: 100%;
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
+}
+
+/*---------- A PROPOS------- */
+#imgProfil {
+  width: 30%;
+}
