@@ -3,6 +3,8 @@
     --black: #21242A;
     --beige: #FFD1A6; 
     --white:#f6f3f0;
+    --beigeDore: #C2A77D;
+
  }
 
 *{
@@ -11,12 +13,16 @@
     list-style: none;
     text-decoration: none;
     color: var(--white);
+    font-family: "IBM Plex Sans", sans-serif;
 }
 
 .grey{
     background-color: var(--grey);
 }
 
+body{
+    background-color: var(--black);
+}
 /*---------------------------- HEADER-------------------------------- */
 nav {
     display: flex; /* Met les éléments en ligne */
