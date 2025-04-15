@@ -1,0 +1,83 @@
+:root{
+    --grey: #292C31;
+    --black: #21242A;
+    --beige: #FFD1A6; 
+    --white:#f6f3f0;
+ }
+
+*{
+    margin: 0%;
+    padding: 0%;
+    list-style: none;
+    text-decoration: none;
+    color: var(--white);
+}
+
+.grey{
+    background-color: var(--grey);
+}
+
+/*---------------------------- HEADER-------------------------------- */
+nav {
+    display: flex; /* Met les éléments en ligne */
+    justify-content: space-between; /* Espace entre le logo et la liste */
+    align-items: center; /* Alignement vertical */ 
+}
+
+ul {
+    display: flex;
+    justify-content: space-around; /* Espace entre les liens */
+    width: 33%;
+}
+#logo{
+    width: 5%;
+object-fit: cover;
+}
+
+/* -----------------------------MAIN---------------------------------- */
+
+/* --------------PROJETS------------ */
+.card {
+    color: #333333;
+    box-shadow: 0 4px 15px 5px #00000029;
+    width: 25%;
+    padding: 3%;
+    border-radius: 2%;
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 2%;
+      aspect-ratio: 1.5; /* Assure un ratio carré. On aurait pu mettre height 320px */
+      object-fit: cover;
+      margin-bottom: 5%;
+    }
+}
+
+/* ----------------COMPETENCE------- */
+.figCap {
+    border: solid 1px;
+    border-color:var(--grey);
+    box-shadow: 10px 10px 10px rgb(68, 67, 67);
+    width: 20%;
+    padding: 1%;
+    text-align: center;
+    img {
+      width: 20%;
+    }
+  
+    figCaption {
+      font-size: 14px;
+      text-align: center;
+      margin-top: 5%;
+    }
+  }
+
+/* --------------PARCOURS------------- */
+  #parcours{
+    width: 100%;
+    img{
+        width: 50%;
+  object-fit: cover;
+    }
+  }
+  
