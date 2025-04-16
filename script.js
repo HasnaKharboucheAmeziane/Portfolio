@@ -4,7 +4,7 @@ const toggleBtn1 = document.getElementById("toggleBtn1");
 const toggleBtn2 = document.getElementById("toggleBtn2");
 const popover2 = document.getElementById("monpopover2");
 
-// Vérifie la prise en charge de l'API Popover.
+// Vérifie la prise en charge de Popover.
 function supportsPopover() {
   return HTMLElement.prototype.hasOwnProperty("popover");
 }

@@ -45,7 +45,7 @@ h2,
 p,
 blockquote {
   margin-top: 0px;
-  margin-bottom: 23px;
+  margin-bottom: -30px;
 }
 
 .h2Pstyle {
@@ -57,6 +57,15 @@ blockquote {
 
 .marginBottomSection {
   margin-bottom: 15%;
+}
+
+.container{
+  max-width: 1200px;
+  margin: auto;
+}
+
+.marginSection{
+  margin-inline: 24px;
 }
 /* ----------------------------------------- */
 .beigeDore {
@@ -97,13 +106,14 @@ ul {
 /* -----------------------------MAIN---------------------------------- */
 main {
   align-items: center;
-  margin-left: 12%;
-  margin-right: 12%;
+  /* margin-left: 12%;
+  margin-right: 12%; */
   background-color: var(--black);
 }
 #h1 {
   padding: 30%;
   text-align: center;
+  padding-bottom: 6%;
 }
 #SectionCard {
   display: flex;
@@ -111,76 +121,104 @@ main {
   gap: 5%;
 }
 
+#heros{
+  display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#imgHeros{
+  object-fit: cover;
+  width: 20%;
+  padding-bottom: 5%;
+}
 /* --------------PROJETS------------ */
 #projet {
-  width: 100%;
   background-color: var(--grey);
+  padding: 5%;
+  width:100%;
 }
+
 button{
     color: var(--beigeDore);
     border: solid 1px #c2a77d;
     padding: 2%;
     padding-left: 8%;
     padding-right: 8%;
-    margin-top: 5%;
+    margin-top: 25%;
 background-color: #292c31;
 }
 
 .card {
   color: #333333;
-  box-shadow: 0 4px 15px 5px #5a575729;
-  width: 25%;
-  padding: 3%;
+  box-shadow: 0 4px 15px 5px #e6d6d629;
+  width: 20%;
+  padding: 5%;
   border-radius: 2%;
   img {
     width: 100%;
     border-radius: 2%;
     aspect-ratio: 1; /* Assure un ratio carré. On aurait pu mettre height 320px */
     object-fit: cover;
-    margin-bottom: 5%;
+    margin-bottom:5%;
   }
 }
 
 /* ----------------COMPETENCE------- */
+#competences {
+  margin-bottom: 15%;
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+#sectionFigCap {
+  font-size: 14px;
+    text-align: center;
+    padding: 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10%;
+    aspect-ratio:0;
+}
+
 .figCap {
   border: solid 1px;
   border-color: var(--grey);
-  box-shadow: 10px 10px 10px rgb(68, 67, 67);
-  width: 20%;
+  box-shadow: 5px 5px 5px 5px rgb(60, 55, 55);
+  width: 50%;
   padding: 1%;
-  text-align: center;
+  
   img {
-    width: 20%;
-  }
-
-  figCaption {
-    font-size: 14px;
-    text-align: center;
-    margin-top: 5%;
+    width: 60%;
+    object-fit: cover;
+    padding: 10%;
   }
 }
 
-#competences {
-  margin-bottom: 15%;
+/*---------- A PROPOS------- */
+#aPropos {
+  background-color: var(--grey);
+  padding: 5%;
+  aspect-ratio: 0;
+}
+
+#imgProfil {
+  width: 50%;
 }
 /* --------------PARCOURS------------- */
 #monParcours {
   width: 100%;
   background-color: var(--grey);
+padding: 5%;
+aspect-ratio: 0;
   img {
     width: 50%;
     object-fit: cover;
   }
 }
 
-/*---------- A PROPOS------- */
-#imgProfil {
-  width: 50%;
-}
-
-#aPropos {
-  background-color: var(--grey);
-}
 /*-------------- CONTACT_OBJECTIFS---------- */
 
 .imgText {
@@ -196,6 +234,8 @@ background-color: #292c31;
 
 #contact {
   background-color: var(--grey);
+  padding: 5%;
+ 
 }
 
 /* ----------FOOTER---------------- */
