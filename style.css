@@ -20,6 +20,7 @@ html,
   font-size: 18px;
   line-height: 23px;
 }
+
 body {
   background-color: var(--black);
   font-size: 18px;
@@ -35,6 +36,7 @@ h1,
   margin-top: 23px;
   margin-bottom: 46px;
 }
+
 h2,
 .h2 {
   font-size: 54px;
@@ -42,6 +44,7 @@ h2,
   margin-top: 23px;
   margin-bottom: 23px;
 }
+
 p,
 blockquote {
   margin-top: 0px;
@@ -55,18 +58,15 @@ blockquote {
   line-height: -1px;
 }
 
-.marginBottomSection {
-  margin-bottom: 15%;
-}
-
-.container{
+.container {
   max-width: 1200px;
   margin: auto;
 }
 
-.marginSection{
-  margin-inline: 24px;
+.marginSection {
+ padding: 24px;
 }
+
 /* ----------------------------------------- */
 .beigeDore {
   color: var(--beigeDore);
@@ -75,29 +75,41 @@ blockquote {
 .grey {
   background-color: var(--grey);
 }
+
 /*---------------------------- HEADER-------------------------------- */
 nav {
-  display: flex; /* Met les éléments en ligne */
-  justify-content: space-between; /* Espace entre le logo et la liste */
-  align-items: center; /* Alignement vertical */
+  display: flex;
+  /* Met les éléments en ligne */
+  justify-content: space-between;
+  /* Espace entre le logo et la liste */
+  align-items: center;
+  /* Alignement vertical */
   cursor: pointer;
   position: fixed;
   width: 100%;
+
   a:hover {
-    color: #c2a77d; /* Couleur au survol */
+    color: #c2a77d;
+    /* Couleur au survol */
   }
+
   a {
-    transition: color 0.3s ease; /* Pour une transition fluide */
+    transition: color 0.3s ease;
+    /* Pour une transition fluide */
   }
 }
+
 ul {
   display: flex;
-  justify-content: space-around; /* Espace entre les liens */
+  justify-content: space-around;
+  /* Espace entre les liens */
   width: 33%;
+
   a {
     font-weight: 400;
   }
 }
+
 #logo {
   width: 10%;
   object-fit: cover;
@@ -109,44 +121,49 @@ main {
   /* margin-left: 12%;
   margin-right: 12%; */
   background-color: var(--black);
+  padding-top: 10%;
 }
+
 #h1 {
-  padding: 30%;
+  padding: 15%;
   text-align: center;
   padding-bottom: 6%;
 }
+
 #SectionCard {
   display: flex;
   justify-content: center;
   gap: 5%;
 }
 
-#heros{
+#heros {
   display: flex;
-    flex-direction: column;
-    align-items: center;
+  flex-direction: column;
+  align-items: center;
 }
 
-#imgHeros{
+#imgHeros {
   object-fit: cover;
   width: 20%;
   padding-bottom: 5%;
 }
+
 /* --------------PROJETS------------ */
 #projet {
   background-color: var(--grey);
   padding: 5%;
-  width:100%;
+  max-width: 1200px;
+  margin: auto;
 }
 
-button{
-    color: var(--beigeDore);
-    border: solid 1px #c2a77d;
-    padding: 2%;
-    padding-left: 8%;
-    padding-right: 8%;
-    margin-top: 25%;
-background-color: #292c31;
+button {
+  color: var(--beigeDore);
+  border: solid 1px #c2a77d;
+  padding: 2%;
+  padding-left: 8%;
+  padding-right: 8%;
+  margin-top: 25%;
+  background-color: #292c31;
 }
 
 .card {
@@ -155,32 +172,35 @@ background-color: #292c31;
   width: 20%;
   padding: 5%;
   border-radius: 2%;
+
   img {
     width: 100%;
     border-radius: 2%;
-    aspect-ratio: 1; /* Assure un ratio carré. On aurait pu mettre height 320px */
+    aspect-ratio: 1;
+    /* Assure un ratio carré. On aurait pu mettre height 320px */
     object-fit: cover;
-    margin-bottom:5%;
+    margin-bottom: 5%;
   }
 }
 
 /* ----------------COMPETENCE------- */
 #competences {
-  margin-bottom: 15%;
   padding: 5%;
   display: flex;
   flex-direction: column;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #sectionFigCap {
   font-size: 14px;
-    text-align: center;
-    padding: 2%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10%;
-    aspect-ratio:0;
+  text-align: center;
+  padding: 2%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10%;
+  aspect-ratio: 0;
 }
 
 .figCap {
@@ -189,7 +209,7 @@ background-color: #292c31;
   box-shadow: 5px 5px 5px 5px rgb(60, 55, 55);
   width: 50%;
   padding: 1%;
-  
+
   img {
     width: 60%;
     object-fit: cover;
@@ -202,17 +222,22 @@ background-color: #292c31;
   background-color: var(--grey);
   padding: 5%;
   aspect-ratio: 0;
+  max-width: 1200px;
+  margin: auto;
 }
 
 #imgProfil {
   width: 50%;
 }
+
 /* --------------PARCOURS------------- */
 #monParcours {
-  width: 100%;
   background-color: var(--grey);
-padding: 5%;
-aspect-ratio: 0;
+  padding: 5%;
+  aspect-ratio: 0;
+  max-width: 1200px;
+  margin: auto;
+
   img {
     width: 50%;
     object-fit: cover;
@@ -223,8 +248,6 @@ aspect-ratio: 0;
 
 .imgText {
   display: flex;
-  width: 100%;
-  margin-bottom: 15%;
 
   img {
     width: 50%;
@@ -235,7 +258,9 @@ aspect-ratio: 0;
 #contact {
   background-color: var(--grey);
   padding: 5%;
- 
+  max-width: 1200px;
+  margin: auto;
+
 }
 
 /* ----------FOOTER---------------- */
@@ -249,6 +274,7 @@ footer {
     width: 12%;
     object-fit: cover;
   }
+
   figcaption {
     font-size: 13px;
   }
@@ -271,6 +297,7 @@ footer {
   text-decoration: none;
   width: 30%;
   margin: 5%;
+
   a {
     color: var(--beigeDore);
     border: solid 1px #c2a77d;
@@ -279,6 +306,7 @@ footer {
     padding-right: 8%;
     margin-top: 5%;
   }
+
   img {
     margin-top: 5%;
     object-fit: cover;
