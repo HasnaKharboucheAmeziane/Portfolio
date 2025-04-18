@@ -54,7 +54,7 @@ blockquote {
 .h2Pstyle {
   color: var(--beigeDore);
   text-align: left;
-  font-size: x-large;
+  font-size: 35px;
   line-height: -1px;
 }
 
@@ -64,7 +64,16 @@ blockquote {
 }
 
 .marginSection {
- padding: 24px;
+  padding: 24px;
+}
+
+.imgText {
+  display: flex;
+  gap: 3%;
+  img {
+    width: 50%;
+    object-fit: cover;
+  }
 }
 
 /* ----------------------------------------- */
@@ -77,6 +86,7 @@ blockquote {
 }
 
 /*---------------------------- HEADER-------------------------------- */
+
 nav {
   display: flex;
   /* Met les éléments en ligne */
@@ -87,6 +97,7 @@ nav {
   cursor: pointer;
   position: fixed;
   width: 100%;
+  padding: 1%;
 
   a:hover {
     color: #c2a77d;
@@ -241,67 +252,60 @@ button {
   img {
     width: 50%;
     object-fit: cover;
+    height: 50%;
   }
 }
 
 /*-------------- OBJECTIFS---------- */
 
-#objectif{
-justify-content: space-between;
+#objectif {
   background-color: var(--grey);
   padding: 5%;
   max-width: 1200px;
   margin: auto;
-img{
-  width: 50%;
-  padding-left: 50%;
-}
-}
-
-.imgText {
-  display: flex;
-gap: 3%;
   img {
     width: 50%;
     object-fit: cover;
   }
-}
+  }
 
 /* -----------------CONTACT -------------*/
+#grandeSectionContact{
+  display: flex;
+  align-items: center;
+}
 
 #contact {
-  background-color: var(--grey);
-  padding: 5%;
-  max-width: 1200px;
-  margin: auto;
-}
+flex-direction: column;
   form {
-  input{
-    margin-block: 3%;
-    background-color: #60584d;
+    /* border: solid 1px;
+  border-color: #c2a77d; */
+    padding-top: 2%;
+    input {
+      margin-block: 1%;
+      background-color: #605647;
+      width: 25em;
+      height: 2em;
+    }
+    textarea {
+      background-color: #60584d;
+      height: 20em;
+      width: 50em;
+    }
+    button {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 18px;
+      margin-top: 3%;
+    }
   }
-  textarea{
-    background-color: #60584d;
-    width: 100%;
-    height: 100%;
-  }
-  button{
-   padding-left: 15%;
-   padding-right: 15%;
-   font-size: 18px ;
-   margin-top: 10%;
-  }
-  border: solid 1px;
-  border-color: #c2a77d;
- padding: 2%;
-
-  }
-
-
+}
 /* ----------FOOTER---------------- */
 footer {
   display: flex;
   width: 100%;
+ margin-top: 5%;
+ padding: 5%;
 }
 
 #iconReseau {
