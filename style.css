@@ -409,7 +409,7 @@ Footer {
     margin-bottom: 40px;
   }
   h2, .h2 {
-    font-size: 45px;
+    font-size: 40px;
     line-height: 60px;
     margin-top: 23px;
     margin-bottom: 23px;
@@ -439,11 +439,11 @@ ul{
   .h2Pstyle {
     color: var(--beigeDore);
     text-align: left;
-    font-size: 25px;
+    font-size: 22px;
     line-height: -1.5px;
   }
 /* -------------------------------------PROJETS--------------------  */
-  }
+  
   #SectionCard {
     display: flex;
     flex-direction: column;
@@ -479,6 +479,11 @@ ul{
   margin: 5%;
   font-size: 14px;
 }
+/* -----------------------------------COMPETENCES--------------------------- */
+
+
+
+
 /* ---------------------------------A PROPOS------------------------------- */
   #aPropos {
     background-color: var(--grey);
@@ -486,34 +491,90 @@ ul{
     aspect-ratio: 0;
     max-width: 1200px;
     margin: auto;
+    padding-bottom: 10%;
   }
   
   #imgProfil {
     width: 100%;
   }
+
   .imgText {
 display: flex;
 flex-direction: column-reverse;
     gap:3%;
+   
     img {
       width: 100%;
       object-fit: cover;
       margin-bottom: 5%;
     }
+  }
 /* -------------------------------PARCOURS----------------------------- */
 #monParcours {
-  .imgText{
-flex-direction: column-reverse;
-  }
+  flex-direction: column;
+  padding-bottom: 10%;
   img {
     width: 100%;
     object-fit: cover;
     margin-bottom: 5%;
   }
-  
+}
+/* ------------------------------OBJECTIFS--------------------------------- */
+
+#objectif {
+  padding-bottom: 10%;
+  img {
+    width: 100%;
+    object-fit: cover;
+  }
+}
+
+/* --------------------------------CONTACT---------------------------------------- */
+
+#contact {
+  flex-direction: column;
+  form {
+    /* border: solid 1px;
+  border-color: #c2a77d; */
+    padding-top: 2%;
+    margin-bottom: 10%;
+    input {
+      margin-block: 1%;
+      background-color: #605647;
+      width: 25em;
+      height: 2em;
+    }
+    textarea {
+      background-color: #60584d;
+      height: 10em;
+      width: 30em;
+    }
+    button {
+      padding-left: 10%;
+      padding-right: 10%;
+      font-size: 18px;
+      margin-top: 3%;
+    }
+  }
+}
+
+.retour{
+  display: flex;
+justify-content: end;
+  a{
+color: #21242a;
+  border: 1px solid;
+  padding: 3%;
+  background-color: #c2a77d;
+border-radius: 10%;
+margin-right: 2%;
+margin-bottom: 3%;
+}
 }
 
 
 
 
+
 }
+
