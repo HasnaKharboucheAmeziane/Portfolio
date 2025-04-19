@@ -218,11 +218,11 @@ button {
   border: solid 1px;
   border-color: var(--grey);
   box-shadow: 5px 5px 5px 5px rgb(60, 55, 55);
-  width: 50%;
+  width:50%;
   padding: 1%;
 
   img {
-    width: 60%;
+    width: 40%;
     object-fit: cover;
     padding: 10%;
   }
@@ -302,27 +302,58 @@ flex-direction: column;
 }
 /* ----------FOOTER---------------- */
 footer {
+  margin: auto;
   display: flex;
-  width: 100%;
- margin-top: 5%;
- padding: 5%;
-}
-
-#iconReseau {
-  img {
-    width: 12%;
-    object-fit: cover;
-  }
-
-  figcaption {
-    font-size: 13px;
-  }
+    width: 100%;
+    margin-top: 5%;
+    padding: 5%;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+   width: 100%;
+    /* margin-top: 5%; */
+    /* padding: 5%; */
+    /* justify-content: center; */
+    /* flex-direction: column; */
+    align-items: center;
+    flex-direction: row-reverse;
+    font-size: 16px;
+    padding-inline: 17%;
 }
 
 #navFooter {
-  img {
-    width: 15%;
-    object-fit: cover;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+ul{
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+a{
+  color:var(--white);
+text-decoration: underline;
+}
+img {
+  width: 15%;
+  object-fit: cover;
+}
+
+figure{
+  width: 30%; 
+}
+
+figcaption {
+  font-size: 13px;
+  color: #c2a77d;
+}
+}
+
+#mailLinkedin{
+  padding-top: 10%;
+  p{
+    font-size: 14px;
+    font-style: italic;
   }
 }
 
