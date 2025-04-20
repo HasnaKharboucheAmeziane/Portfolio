@@ -124,8 +124,17 @@ ul {
 #logo {
   width: 10%;
   object-fit: cover;
+  border: #292c31 solid 2px;
+}
+#logo:hover{
+  border-color: #c2a77d;
 }
 
+.burger {
+  display: none;
+  font-size: 26px;
+  cursor: pointer;
+}
 /* -----------------------------MAIN---------------------------------- */
 main {
   align-items: center;
@@ -353,9 +362,22 @@ Footer {
   a {
     color: var(--white);
     text-decoration: underline;
+    
+  }
+  a:hover {
+    color: #c2a77d;
+    /* Couleur au survol */
+  }
+
+  a {
+    transition: color 0.3s ease;
+    /* Pour une transition fluide */
   }
 }
 
+#mailLinkedin figure a:hover{
+ border-color: #c2a77d;
+}
 /* ------------------------JS----------------------------------------- */
 
 #monpopover1,
@@ -422,6 +444,7 @@ ul{
   flex-direction:column ;
 }
   }
+
   /* ---------------------------HEROS-------------------- */
   #imgHeros {
     object-fit: cover;

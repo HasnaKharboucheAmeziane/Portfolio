@@ -4,6 +4,8 @@ const toggleBtn1 = document.getElementById("toggleBtn1");
 const toggleBtn2 = document.getElementById("toggleBtn2");
 const popover2 = document.getElementById("monpopover2");
 
+
+
 // Vérifie la prise en charge de Popover.
 function supportsPopover() {
   return HTMLElement.prototype.hasOwnProperty("popover");
@@ -29,4 +31,5 @@ if (supportsPopover()) {
   popover2.textContent = "L'API Popover n'est pas prise en charge.";
   toggleBtn2.hidden = true;
 }
+
 
