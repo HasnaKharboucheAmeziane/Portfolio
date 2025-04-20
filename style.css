@@ -567,12 +567,27 @@ color: #21242a;
   padding: 3%;
   background-color: #c2a77d;
 border-radius: 10%;
-margin-right: 2%;
+margin-right: 5%;
 margin-bottom: 3%;
 }
 }
 
+/* ---------------------------------------FOOTER-------------------------------- */
 
+footer {
+  margin: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 2%;
+  padding: 1%;
+  padding-right: 2%;
+  padding-block: 3%;
+  justify-content: space-between;
+  font-size: 16px;
+  
+}
 
 
 
