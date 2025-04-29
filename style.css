@@ -290,7 +290,6 @@ button {
   }
 }
 
-
 /*---------- A PROPOS------- */
 #aPropos {
   background-color: var(--grey);
@@ -379,8 +378,7 @@ button {
   }
 }
 
-#mailLinkedin{
-
+#mailLinkedin {
   a {
     color: var(--white);
     text-decoration: underline;
@@ -434,15 +432,13 @@ Footer {
     /* Pour une transition fluide */
   }
 
-
-#mailLinkedin figure a:hover {
-  img{
-    width: 30%;
+  #mailLinkedin figure a:hover {
+    img {
+      width: 30%;
       border-color: #c2a77d;
     }
   }
-  
-  }
+}
 
 /* ------------------------JS----------------------------------------- */
 
@@ -516,14 +512,13 @@ Footer {
     }
   }
 
-
   /* ________________________MENU BURGER------------------- */
 
   .burger {
     display: none;
-    font-size:2em;
+    font-size: 2em;
     cursor: pointer;
-    padding-right: 24px; 
+    padding-right: 24px;
   }
 
   .nav-links {
@@ -535,8 +530,8 @@ Footer {
     width: 100%;
     text-align: center;
     z-index: 1;
-    li{
-      padding: 1%; 
+    li {
+      padding: 1%;
     }
   }
 
@@ -550,10 +545,7 @@ Footer {
 
   ul {
     width: 100%; /* occupe toute la largeur */
-    
   }
-
-
 
   /* ---------------------------HEROS-------------------- */
   #imgHeros {
@@ -576,7 +568,6 @@ Footer {
     line-height: -1.5px;
   }
 
-  
   /* -------------------------------------PROJETS--------------------  */
 
   #SectionCard {
@@ -707,17 +698,22 @@ Footer {
   /* ---------------------------------------FOOTER-------------------------------- */
 
   footer {
-    margin: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
-    width: 100%;
-    margin-top: 2%;
-    padding: 1%;
-    padding-right: 2%;
-    padding-block: 3%;
-    justify-content: space-between;
+    justify-content: center;
+    text-align: center;
+    padding: 3%;
     font-size: 16px;
+    width: 100%;
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 10px;
+      padding: 0;
+      margin: 10px 0;
+    }
   }
 }
 
