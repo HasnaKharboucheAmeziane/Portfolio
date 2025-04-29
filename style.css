@@ -140,9 +140,11 @@ ul {
 }
 
 .burger {
-  /* display: none;  fait disparaitre le menu dans desk */
-  cursor: pointer;
+   display: none; 
+   /* fait disparaitre le menu dans desk */ 
+ cursor: pointer;
 }
+
 /* -----------------------------MAIN---------------------------------- */
 main {
   align-items: center;
