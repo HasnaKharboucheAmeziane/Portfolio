@@ -32,7 +32,7 @@ if (supportsPopover()) {
   toggleBtn2.hidden = true;
 }
 
-
+// ------------------------------------MENU BURGER-----------------------------------------
 
   const burger = document.getElementById("burger");
   const navLinks = document.getElementById("nav-links");
