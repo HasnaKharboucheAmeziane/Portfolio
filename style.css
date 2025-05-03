@@ -262,8 +262,10 @@ button {
   padding: 5%;
   display: flex;
   flex-direction: column;
-  max-width: 1200px;
-  margin: auto;
+  width: 1084px;
+  /*max-with: 1200px*/
+    /* margin: auto; */
+  margin-right: 121px;
   background-color: var(--grey);
 }
 
