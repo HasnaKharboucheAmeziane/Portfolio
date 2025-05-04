@@ -40,4 +40,4 @@ if (supportsPopover()) {
   burger.addEventListener("click", () => {
     navLinks.classList.toggle("active");
   });
-
+// pour activer le menu burger et le rendre visible
