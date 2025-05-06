@@ -49,7 +49,7 @@ h2,
   margin-bottom: 23px;
 }
 
-section{
+section {
   width: 100%;
 }
 
@@ -79,6 +79,7 @@ blockquote {
 .imgText {
   display: flex;
   gap: 3%;
+
   img {
     width: 50%;
     object-fit: cover;
@@ -135,6 +136,7 @@ ul {
   object-fit: cover;
   border: #292c31 solid 2px;
 }
+
 #logo:hover {
   border-color: #c2a77d;
 }
@@ -144,14 +146,15 @@ ul {
   object-fit: cover;
   border: #292c31 solid 2px;
 }
+
 #logoLinkedin:hover {
   border-color: #c2a77d;
 }
 
 .burger {
-   display: none; 
-   /* fait disparaitre le menu dans desk */ 
- cursor: pointer;
+  display: none;
+  /* fait disparaitre le menu dans desk */
+  cursor: pointer;
 }
 
 /* -----------------------------MAIN---------------------------------- */
@@ -186,6 +189,7 @@ main {
   width: 12%;
   padding-bottom: 5%;
 }
+
 #herosColumn {
   a {
     margin-bottom: -2%;
@@ -216,7 +220,8 @@ button {
   width: 30%;
   padding: 5%;
   border-radius: 2%;
-  border: 2px solid #c2a87d15; /* Couleur de base de la bordure */
+  border: 2px solid #c2a87d15;
+  /* Couleur de base de la bordure */
   transition: border-color 0.3s ease;
 
   img {
@@ -228,9 +233,11 @@ button {
     margin-bottom: 5%;
   }
 }
+
 .card:hover {
   border-color: #c2a77d;
 }
+
 /* ----------------COMPETENCE------- */
 #competences {
   padding: 5%;
@@ -258,12 +265,14 @@ button {
   /* box-shadow: 5px 5px 5px 5px rgb(60, 55, 55); */
   width: 50%;
   padding: 1%;
+
   img {
-    width:60%;
+    width: 60%;
     object-fit: cover;
     padding: 10%;
   }
 }
+
 /* ------------------------------------------UI UX--------------- */
 
 #competencesUi {
@@ -309,6 +318,7 @@ button {
   padding: 5%;
   max-width: 1200px;
   margin: auto;
+
   img {
     width: 50%;
     object-fit: cover;
@@ -324,22 +334,26 @@ button {
 #contact {
   flex-direction: column;
   width: fit-content;
+
   form {
     /* border: solid 1px;
   border-color: #c2a77d; */
     padding-top: 2%;
     margin-bottom: 10%;
+
     input {
       margin-block: 1%;
       background-color: #605647;
       width: 25em;
       height: 2em;
     }
+
     textarea {
       background-color: #60584d;
       height: 10em;
       width: 50em;
     }
+
     button {
       padding-left: 10%;
       padding-right: 10%;
@@ -352,6 +366,7 @@ button {
 .retour {
   display: flex;
   justify-content: end;
+
   a {
     color: #21242a;
     border: 1px solid;
@@ -382,16 +397,19 @@ Footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+
     p {
       margin-top: 15%;
       font-size: 14px;
       font-style: italic;
     }
   }
+
   a {
     color: var(--white);
     text-decoration: underline;
   }
+
   a:hover {
     color: #c2a77d;
     /* Couleur au survol */
@@ -415,6 +433,7 @@ Footer {
     color: var(--white);
     text-decoration: underline;
   }
+
   a:hover {
     color: #c2a77d;
     /* Couleur au survol */
@@ -425,6 +444,7 @@ Footer {
     /* Pour une transition fluide */
   }
 }
+
 #logoLinkedin {
   width: 3%;
   object-fit: cover;
@@ -461,6 +481,7 @@ Footer {
     aspect-ratio: 0;
   }
 }
+
 #monpopover2 {
   margin-top: 6%;
   margin-left: 10%;
@@ -469,11 +490,13 @@ Footer {
 /* ------------------------------------------------MOBILE 650-------------------------------------- */
 
 @media screen and (max-width: 650px) {
+
   html,
   .root {
     font-size: 15px;
     line-height: 20px;
   }
+
   body,
   .article {
     font-family: sans-serif;
@@ -482,9 +505,10 @@ Footer {
     max-width: 560px;
     margin: auto;
   }
-#h1{
-  padding: 4%;
-}
+
+  #h1 {
+    padding: 4%;
+  }
 
   h1,
   .h1 {
@@ -492,8 +516,9 @@ Footer {
     line-height: 80px;
     margin-top: 20px;
     margin-bottom: 40px;
-    
+
   }
+
   h2,
   .h2 {
     font-size: 40px;
@@ -504,6 +529,7 @@ Footer {
 
   nav {
     display: flex;
+
     ul {
       flex-direction: column;
     }
@@ -529,13 +555,14 @@ Footer {
     width: 100%;
     text-align: center;
     z-index: 1;
+
     li {
       padding: 1%;
     }
   }
 
   .nav-links.active {
-    display: flex; 
+    display: flex;
     /* rend le menu vsible */
   }
 
@@ -544,8 +571,10 @@ Footer {
   }
 
   ul {
-    width: 100%; /* occupe toute la largeur */
-    li{
+    width: 100%;
+
+    /* occupe toute la largeur */
+    li {
       font-size: 18px;
     }
   }
@@ -556,10 +585,12 @@ Footer {
     width: 30%;
     padding-bottom: 5%;
   }
+
   #herosColumn {
     a {
       margin-top: 5%;
     }
+
     margin-top: 20%;
     margin-bottom: 20%;
   }
@@ -579,15 +610,18 @@ Footer {
     align-items: center;
     gap: 5%;
   }
+
   .card {
     color: #333333;
     box-shadow: 0 4px 15px 5px #e6d6d629;
     width: 75%;
     padding: 5%;
     border-radius: 2%;
-    border: 2px solid #333; /* Couleur de base de la bordure */
+    border: 2px solid #333;
+    /* Couleur de base de la bordure */
     transition: border-color 0.3s ease;
     margin-bottom: 5%;
+
     img {
       width: 100%;
       border-radius: 2%;
@@ -608,6 +642,7 @@ Footer {
     margin: 5%;
     font-size: 14px;
   }
+
   /* -----------------------------------COMPETENCES--------------------------- */
 
   /* ---------------------------------A PROPOS------------------------------- */
@@ -635,20 +670,24 @@ Footer {
       margin-bottom: 5%;
     }
   }
+
   /* -------------------------------PARCOURS----------------------------- */
   #monParcours {
     flex-direction: column;
     padding-bottom: 10%;
+
     img {
       width: 100%;
       object-fit: cover;
       margin-bottom: 5%;
     }
   }
+
   /* ------------------------------OBJECTIFS--------------------------------- */
 
   #objectif {
     padding-bottom: 10%;
+
     img {
       width: 100%;
       object-fit: cover;
@@ -659,22 +698,26 @@ Footer {
 
   #contact {
     flex-direction: column;
+
     form {
       /* border: solid 1px;
   border-color: #c2a77d; */
       padding-top: 2%;
       margin-bottom: 10%;
+
       input {
         margin-block: 1%;
         background-color: #605647;
         width: 25em;
         height: 2em;
       }
+
       textarea {
         background-color: #60584d;
         height: 10em;
         width: 30em;
       }
+
       button {
         padding-left: 10%;
         padding-right: 10%;
@@ -687,6 +730,7 @@ Footer {
   .retour {
     display: flex;
     justify-content: end;
+
     a {
       color: #21242a;
       border: 1px solid;
@@ -709,6 +753,7 @@ Footer {
     padding: 3%;
     font-size: 16px;
     width: 100%;
+
     ul {
       display: flex;
       flex-direction: column;
@@ -723,11 +768,13 @@ Footer {
 /* ____________________________________MOBILE 460PX___________________________________________________ */
 
 @media screen and (max-width: 460px) {
+
   html,
   .root {
     font-size: 15px;
     line-height: 20px;
   }
+
   body,
   .article {
     font-family: sans-serif;
@@ -736,6 +783,7 @@ Footer {
     max-width: 560px;
     margin: auto;
   }
+
   h1,
   .h1 {
     font-size: 50px;
@@ -743,6 +791,7 @@ Footer {
     margin-top: 20px;
     margin-bottom: 40px;
   }
+
   h2,
   .h2 {
     font-size: 40px;
@@ -753,6 +802,7 @@ Footer {
 
   nav {
     display: flex;
+
     ul {
       flex-direction: column;
     }
@@ -764,10 +814,12 @@ Footer {
     width: 30%;
     padding-bottom: 5%;
   }
+
   #herosColumn {
     a {
       margin-top: 5%;
     }
+
     margin-top: 20%;
     margin-bottom: 20%;
   }
@@ -778,6 +830,7 @@ Footer {
     font-size: 22px;
     line-height: -1.5px;
   }
+
   /* -------------------------------------PROJETS--------------------  */
 
   #SectionCard {
@@ -786,15 +839,18 @@ Footer {
     align-items: center;
     gap: 5%;
   }
+
   .card {
     color: #333333;
     box-shadow: 0 4px 15px 5px #e6d6d629;
     width: 75%;
     padding: 5%;
     border-radius: 2%;
-    border: 2px solid #333; /* Couleur de base de la bordure */
+    border: 2px solid #333;
+    /* Couleur de base de la bordure */
     transition: border-color 0.3s ease;
     margin-bottom: 5%;
+
     img {
       width: 100%;
       border-radius: 2%;
@@ -815,6 +871,7 @@ Footer {
     margin: 5%;
     font-size: 14px;
   }
+
   /* -----------------------------------COMPETENCES--------------------------- */
 
   /* ---------------------------------A PROPOS------------------------------- */
@@ -842,20 +899,24 @@ Footer {
       margin-bottom: 5%;
     }
   }
+
   /* -------------------------------PARCOURS----------------------------- */
   #monParcours {
     flex-direction: column;
     padding-bottom: 10%;
+
     img {
       width: 100%;
       object-fit: cover;
       margin-bottom: 5%;
     }
   }
+
   /* ------------------------------OBJECTIFS--------------------------------- */
 
   #objectif {
     padding-bottom: 10%;
+
     img {
       width: 100%;
       object-fit: cover;
@@ -866,22 +927,26 @@ Footer {
 
   #contact {
     flex-direction: column;
+
     form {
       /* border: solid 1px;
   border-color: #c2a77d; */
       padding-top: 2%;
       margin-bottom: 10%;
+
       input {
         margin-block: 1%;
         background-color: #605647;
         width: 25em;
         height: 2em;
       }
+
       textarea {
         background-color: #60584d;
         height: 10em;
         width: 30em;
       }
+
       button {
         padding-left: 10%;
         padding-right: 10%;
@@ -894,6 +959,7 @@ Footer {
   .retour {
     display: flex;
     justify-content: end;
+
     a {
       color: #21242a;
       border: 1px solid;
@@ -920,4 +986,98 @@ Footer {
     justify-content: space-between;
     font-size: 16px;
   }
+}
+
+/* ---------------------------------------FOOTER2-------------------------------- */
+
+footer {
+  padding-block: 40px;
+
+  h2 {
+    font-size: 1.2rem;
+    line-height: 1.2;
+    margin-top: 0;
+    margin-bottom: 16px;
+
+  }
+}
+
+footer a,
+footer p {
+  text-decoration: none;
+  color: rgba(255, 255, 255, 0.63);
+}
+
+.logo-container {
+  width: 145px;
+  height: 64px;
+
+  img {
+    height: 100%;
+    aspect-ratio: auto;
+  }
+}
+
+
+.button {
+  color: var(--beigeDore);
+  border: solid 1px #c2a77d;
+  background-color: var(--beigeDore);
+  color: var(--black);
+  padding: 10px 20px;
+  transition: all 200ms ease-out;
+  text-wrap: nowrap;
+  height: fit-content;
+}
+
+.button:hover {
+  transform: scale(1.2);
+  color: var(--beigeDore);
+  border: solid 1px #a28c68;
+  background-color: transparent;
+
+}
+
+.row1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.socials {
+  display: flex;
+  flex-direction: column;
+  width: fit-content;
+  gap: 4px;
+  img {
+    width: 40px;
+  }
+}
+
+.f-left {
+  width: fit-content;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
+}
+
+.f-middle {
+
+  display: flex;
+  flex-direction: column;
+
+  max-width: 220px;
+  width: 100%;
+  gap: 4px;
+}
+.f-right{
+  display: flex;
+}
+
+.row2 {
+  display: flex;
+  justify-content: space-between;
+  border-top: solid 1px grey;
+  padding-top: 24px;
+  margin-top: 24px;
 }
