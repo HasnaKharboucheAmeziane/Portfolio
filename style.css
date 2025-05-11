@@ -114,7 +114,6 @@ nav {
   padding: 1%;
   z-index: 1;
 
-
   a:hover {
     color: #c2a77d;
     /* Couleur au survol */
@@ -213,8 +212,8 @@ main {
 button {
   color: var(--beigeDore);
   border: solid 1px #c2a77d;
-  padding: 11px 2px;
-  margin-top: 25%;
+  padding: 11px 22px;
+  margin-top: 31%;
   background-color: #292c31;
 }
 
@@ -368,7 +367,7 @@ button {
       color: var(--grey);
       border: solid 1px #a28c68;
       background-color: var(--beigeDore);
-      transition:color 0.3s ease ;
+      transition: color 0.3s ease;
     }
   }
 }
@@ -464,13 +463,14 @@ Footer {
 
 #monpopover1,
 #monpopover2,
-#monpopover3{
+#monpopover3 {
   text-align: center;
   background-color: #21242a;
   color: #c2a77d;
   text-decoration: none;
-  width: 30%;
-  margin:5px;
+  width: 27%;
+  margin: 10px;
+  margin-left: 80px;
   font-size: 18px;
 
   a {
@@ -486,7 +486,6 @@ Footer {
     /* Couleur au survol */
   }
 
-
   img {
     margin-top: 5%;
     object-fit: cover;
@@ -494,7 +493,7 @@ Footer {
   }
 }
 
-#monpopover2{
+#monpopover2 {
   margin-top: 6%;
   margin-left: 10%;
 }
@@ -545,8 +544,8 @@ Footer {
       li {
         font-size: 18px;
         line-height: 2.1;
-    margin-bottom: 20px;
-    }
+        margin-bottom: 20px;
+      }
     }
   }
 
@@ -629,14 +628,14 @@ Footer {
   }
 
   .card {
-   
     width: 75%;
     padding: 5%;
-    
+
     margin-bottom: 5%;
 
-    button{
+    button {
       font-size: 17px;
+      padding: 11px 22px;
     }
 
     img {
@@ -656,8 +655,8 @@ Footer {
     background-color: #21242a;
     color: #c2a77d;
     text-decoration: none;
-    width: 84%;
-    margin: 2%;
+    width: 74%;
+    margin: 9%;
     font-size: 14px;
   }
 
@@ -666,14 +665,13 @@ Footer {
   #sectionFigCap {
     flex-direction: column;
     gap: 20px;
-   
   }
 
-.figCap{
-  border:#333333 solid 1px;
-  margin-top: 30px;
-  padding: 10px 10px;
-}
+  .figCap {
+    border: #333333 solid 1px;
+    margin-top: 30px;
+    padding: 10px 10px;
+  }
   /* ---------------------------------A PROPOS------------------------------- */
   #aPropos {
     background-color: var(--grey);
@@ -794,124 +792,121 @@ Footer {
   }
 } */
 
-/* ------------------------------------------FOOTER2---------------------------- */
+  /* ------------------------------------------FOOTER2---------------------------- */
 
-footer {
-  display: flex;
-  flex-direction: column;
-  gap: 40px;
-  padding-block: 40px;
+  footer {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    padding-block: 40px;
 
-  h2 {
-    font-size: 1.2rem;
-    line-height: 1.2;
-    margin-top: 0;
-    margin-bottom: 16px;
-    color: #292c31;
+    h2 {
+      font-size: 1.2rem;
+      line-height: 1.2;
+      margin-top: 0;
+      margin-bottom: 16px;
+      color: #292c31;
+    }
+  }
+
+  footer a,
+  footer p {
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.63);
+  }
+
+  .logo-container {
+    width: 145px;
+    height: 64px;
+
+    img {
+      height: 100%;
+      aspect-ratio: auto;
+    }
+  }
+
+  .button {
+    color: var(--beigeDore);
+    border: solid 1px #c2a77d;
+    background-color: var(--beigeDore);
+    color: var(--black);
+    padding: 10px 20px;
+    transition: all 200ms ease-out;
+    text-wrap: nowrap;
+    height: fit-content;
+  }
+
+  .button:hover {
+    transform: scale(1.2);
+    color: var(--beigeDore);
+    border: solid 1px #a28c68;
+    background-color: transparent;
+  }
+
+  .row1 {
+    display: flex;
+    flex-direction: column;
+    justify-self: anchor-center;
+    gap: 24px;
+  }
+
+  .socials {
+    display: flex;
+    flex-direction: column;
+    width: fit-content;
+  }
+
+  #iconsSocials {
+    display: flex;
+    img {
+      width: 45px;
+    }
+  }
+  .figCap {
+    margin-top: 5px;
+    margin-bottom: 0;
+    padding: 10px 10px;
+  }
+
+  footer.figcaption {
+    font-size: 12px;
+  }
+
+  .f-left {
+    width: fit-content;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  .f-middle {
+    display: flex;
+    flex-direction: column;
+
+    max-width: 220px;
+    width: 100%;
+    gap: 4px;
+    line-height: 2.1;
+  }
+  .f-right {
+    display: flex;
+  }
+
+  .row2 {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    border-top: solid 1px grey;
+    padding-top: 24px;
+    margin-top: 24px;
+    justify-self: anchor-center;
+  }
+  #f-mobile {
+    display: flex;
+    flex-direction: column-reverse;
+    gap: 40px;
   }
 }
-
-footer a,
-footer p {
-  text-decoration: none;
-  color: rgba(255, 255, 255, 0.63);
-}
-
-.logo-container {
-  width: 145px;
-  height: 64px;
-
-  img {
-    height: 100%;
-    aspect-ratio: auto;
-  }
-}
-
-.button {
-  color: var(--beigeDore);
-  border: solid 1px #c2a77d;
-  background-color: var(--beigeDore);
-  color: var(--black);
-  padding: 10px 20px;
-  transition: all 200ms ease-out;
-  text-wrap: nowrap;
-  height: fit-content;
-}
-
-.button:hover {
-  transform: scale(1.2);
-  color: var(--beigeDore);
-  border: solid 1px #a28c68;
-  background-color: transparent;
-}
-
-.row1 {
-  display: flex;
-  flex-direction: column;
-  justify-self: anchor-center;
-  gap: 24px;
-}
-
-.socials {
-  display: flex;
-  flex-direction: column;
-  width: fit-content;
- 
-}
-
-#iconsSocials{
-  display: flex;
-  img {
-    width: 45px;
-  }
-}
-.figCap{
-  margin-top: 5px;
-  margin-bottom: 0;
-  padding: 10px 10px;
-}
-
-footer.figcaption{
-  font-size: 12px;
-}
-
-.f-left {
-  width: fit-content;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-}
-
-.f-middle {
-  display: flex;
-  flex-direction: column;
-
-  max-width: 220px;
-  width: 100%;
-  gap: 4px;
-  line-height: 2.1;
-}
-.f-right {
-  display: flex;
-}
-
-.row2 {
-  display: flex;
-flex-direction: column;
-gap: 40px;
-  border-top: solid 1px grey;
-  padding-top: 24px;
-  margin-top: 24px;
-  justify-self: anchor-center;
-}
-#f-mobile{
-display: flex;
-flex-direction: column-reverse;
-gap: 40px;
-}
-
-}
-
 
 /* ____________________________________MOBILE 460PX___________________________________________________ */
 
@@ -946,8 +941,6 @@ gap: 40px;
     margin-top: 23px;
     margin-bottom: 23px;
   }
-
-  
 
   nav {
     display: flex;
@@ -1129,13 +1122,13 @@ footer {
   }
 }
 
-#iconsSocials{
+#iconsSocials {
   display: flex;
   gap: 20px;
-  img{
+  img {
     width: 40px;
   }
-  .figCap{
+  .figCap {
     font-size: 13px;
     text-align: center;
     width: auto;
@@ -1286,7 +1279,7 @@ footer p {
         text-wrap: nowrap;
         width: 100%;
       }
-      .button:hover{
+      .button:hover {
         transform: scale(1.2);
       }
     }
