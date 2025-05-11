@@ -45,13 +45,24 @@ if (supportsPopover()) {
 
 // ------------------------------------MENU BURGER-----------------------------------------
 
-  const burger = document.getElementById("burger");
-  const navLinks = document.getElementById("nav-links");
+const burger = document.getElementById("burger");
+const navLinks = document.getElementById("nav-links");
 
-  burger.addEventListener("click", () => {
-    navLinks.classList.toggle("active");
-  });
-// pour activer le menu burger et le rendre visible
+// Toggle (afficher et retirer) du menu au clic sur le burger
+burger.addEventListener("click", (e) => {
+  e.stopPropagation(); // Empêche la fermeture immédiate
+  navLinks.classList.toggle("active");
+  burger.classList.toggle("active");
+});
+
+// Fermer le menu si on clique ailleurs
+document.addEventListener("click", (e) => {
+  // Si on clique en dehors du menu et du burger
+  if (!navLinks.contains(e.target) && !burger.contains(e.target)) {
+    navLinks.classList.remove("active");
+    burger.classList.remove("active");
+  }
+});
 
 
 // ------------------------formulaire reçu---------------------
