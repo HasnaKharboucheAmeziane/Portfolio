@@ -748,14 +748,14 @@ Footer {
       input {
         margin-block: 1%;
         background-color: #605647;
-        width: 25em;
+        width: 333px;
         height: 2em;
       }
 
       textarea {
         background-color: #60584d;
         height: 10em;
-        width: 512px;
+        width: 333px;
       }
 
       button {
