@@ -213,9 +213,7 @@ main {
 button {
   color: var(--beigeDore);
   border: solid 1px #c2a77d;
-  padding: 2%;
-  padding-left: 8%;
-  padding-right: 8%;
+  padding: 11px 2px;
   margin-top: 25%;
   background-color: #292c31;
 }
@@ -888,6 +886,7 @@ footer.figcaption{
   max-width: 220px;
   width: 100%;
   gap: 4px;
+  line-height: 2.1;
 }
 .f-right {
   display: flex;
