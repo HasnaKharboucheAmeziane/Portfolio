@@ -137,7 +137,7 @@ ul {
 }
 
 #logo {
-  width: 10%;
+  width: 12%;
   object-fit: cover;
   border: #292c31 solid 2px;
 }
@@ -470,7 +470,7 @@ Footer {
   text-decoration: none;
   width: 27%;
   margin: 10px;
-  margin-left: 80px;
+  margin-left: 70px;
   font-size: 18px;
 
   a {
@@ -492,6 +492,13 @@ Footer {
     aspect-ratio: 0;
   }
 }
+
+#monpopover3 {
+  width: 30%;
+  margin: 10px;
+  margin-left: 480px;
+}
+
 
 #monpopover2 {
   margin-top: 6%;
@@ -528,13 +535,18 @@ Footer {
     margin-bottom: 40px;
   }
 
-  h2,
-  .h2 {
-    font-size: 40px;
+  h2, .h2 {
+    font-size: 36px;
     line-height: 60px;
     margin-top: 23px;
     margin-bottom: 23px;
-  }
+}
+
+.h2Pstyle {
+  color: var(--beigeDore);
+  text-align: left;
+  font-size: 28px;
+}
 
   nav {
     display: flex;
@@ -937,7 +949,7 @@ Footer {
 
   h2,
   .h2 {
-    font-size: 40px;
+    font-size: 36px;
     line-height: 60px;
     margin-top: 23px;
     margin-bottom: 23px;
