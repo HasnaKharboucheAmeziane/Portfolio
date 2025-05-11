@@ -469,20 +469,23 @@ Footer {
   background-color: #21242a;
   color: #c2a77d;
   text-decoration: none;
-  width: 20%;
-  margin: 5%;
+  width: 30%;
+  margin:5px;
   font-size: 18px;
 
   a {
     color: var(--beigeDore);
     border: solid 1px #c2a77d;
-    padding: 2%;
-    padding-left: 8%;
-    padding-right: 8%;
-    margin-top: 5%;
+    padding: 5px 10px;
     align-items: center;
     font-size: 16px;
   }
+  a:hover {
+    color: var(--black);
+    background-color: var(--beigeDore);
+    /* Couleur au survol */
+  }
+
 
   img {
     margin-top: 5%;
