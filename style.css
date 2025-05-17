@@ -1182,7 +1182,7 @@ footer p {
 }
 
 .button:hover {
-  transform: scale(1.05);
+  transform: scale(1.2);
   color: var(--beigeDore);
   border: solid 1px #a28c68;
   background-color: transparent;
@@ -1190,6 +1190,7 @@ footer p {
 
 .secondary:hover {
   background: var(--grey);
+  transform: scale(1.2);
 }
 
 .row1 {
