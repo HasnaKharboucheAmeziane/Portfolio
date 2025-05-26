@@ -903,6 +903,7 @@ Footer {
   }
   .f-right {
     display: flex;
+    flex-direction: column;
   }
 
   .row2 {
@@ -1227,6 +1228,11 @@ footer p {
 
 .f-right {
   display: flex;
+  flex-direction: column;
+  align-items: start;
+  a, p{
+   margin-bottom:15px;
+  }
 }
 
 .row2 {
