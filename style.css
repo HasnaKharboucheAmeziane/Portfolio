@@ -463,7 +463,8 @@ Footer {
 
 #monpopover1,
 #monpopover2,
-#monpopover3 {
+#monpopover3,
+ #monpopover4 {
   text-align: center;
   background-color: #21242a;
   color: #c2a77d;
@@ -503,6 +504,11 @@ Footer {
 #monpopover2 {
   margin-top: 6%;
   margin-left: 10%;
+}
+
+#monpopover4{
+   margin-top: 6%;
+  margin-left: 30%;
 }
 
 /* ------------------------------------------------MOBILE 650-------------------------------------- */
