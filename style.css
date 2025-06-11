@@ -387,6 +387,26 @@ button {
   }
 }
 
+.iconPhone img {
+  width: 50px;
+  color: #292c31;
+  align-items: center;
+  background-color: var(--beigeDore);
+  border-radius: 100%;
+  padding: 10px;
+}
+
+.iconPhone img:hover {
+  /* transform: scale(3.2); */
+  text-decoration: none;
+  background-color: #60584d;
+}
+
+#pContact{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 /* ----------FOOTER---------------- */
 footer {
   margin: auto;
