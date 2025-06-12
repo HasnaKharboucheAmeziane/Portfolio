@@ -518,6 +518,7 @@ Footer {
   width: 30%;
   margin: 10px;
   margin-left: 480px;
+  scroll-behavior: smooth;
 }
 
 
