@@ -1,45 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Hasna Kharbouche</title>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Portfolio Hasna Kharbouche</title>
+    <link rel="stylesheet" href="style.css" />
 
-  <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
+      rel="stylesheet"
+    />
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,100..700;1,100..700&display=swap"
-    rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+      rel="stylesheet"
+    />
+  </head>
 
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
-    rel="stylesheet">
-</head>
+  <body>
+    <!-- ---------------------------HEADER--------------------------------------------------------- -->
+    <header>
+      <nav class="grey">
+        <a href="index.html"
+          ><img id="logo" src="assets/logo.png" alt="photo logo"
+        /></a>
 
-<body>
-  <!-- ---------------------------HEADER--------------------------------------------------------- -->
-  <header>
-    <nav class="grey">
-        <a href="index.html"><img id="logo" src="assets/logo.png" alt="photo logo"></a>
-
-        <div class="burger" id="burger">
-            ☰
-        </div>
+        <div class="burger" id="burger">☰</div>
 
         <ul class="grey nav-links" id="nav-links">
-            <li><a href="#sectionProjet">Mes Projets</a></li>
-            <li><a href="#sectionAPropos">A Propos</a></li> 
-            <li><a href="#footer">Contact</a></li>
+          <li><a href="#sectionProjet">Mes Projets</a></li>
+          <li><a href="#sectionAPropos">A Propos</a></li>
+          <li><a href="#footer">Contact</a></li>
         </ul>
-    </nav>
-</header>
+      </nav>
+    </header>
 
-  <!----------------------------------- MAIN---------------------------------------------------------->
-  <main>
-    <!-- <section id="herosColumn">
+    <!----------------------------------- MAIN---------------------------------------------------------->
+    <main>
+      <!-- <section id="herosColumn">
       <section id="bas" class="retour">
         <a href="#sectionProjet">⬇</a>
       </section>
@@ -51,7 +54,7 @@
         <img id="imgHeros" src="assets/imgHerosBeige.png" alt=""> -->
       <!-- </section>
     </section> -->
-    <!-- </section>
+      <!-- </section>
     section projets test
     <section id="projets">
       <div class="container">
@@ -93,218 +96,316 @@
           </div>
         </section> -->
 
-    <!-------------------- HERO ----------------------->
-    <section id="hero">
-      <div class="container">
-        <div class="col1">
-          <span id="nom">Kharbouche</span>
-          <div class="rowPrenom">
-            <div class="gold-line"></div>
-            <span id="prenom">Hasna</span>
+      <!-------------------- HERO ----------------------->
+      <section id="hero">
+        <div class="container">
+          <div class="col1">
+            <span id="nom">Kharbouche</span>
+            <div class="rowPrenom">
+              <div class="gold-line"></div>
+              <span id="prenom">Hasna</span>
+            </div>
+            <a href="mailto:hasnakharbouchepro@gmail.com" class="button"
+              >Me Contacter</a
+            >
           </div>
-          <a href="mailto:hasnakharbouchepro@gmail.com" class="button">Me Contacter</a>
-          
+          <div class="col3">
+            <p class="h2Pstyle beigeDore">Front End</p>
+            <h1>Intégratrice Web - Scrum Master</h1>
+            <p class="textGrey">
+              Je suis prête à mettre mes compétences et mon sens des
+              responsabilités au service de projets web.
+            </p>
+          </div>
+          <img src="assets/hero-pic.png" alt="photo profil" />
         </div>
-        <div class="col3">
-          <p class="h2Pstyle beigeDore">Front End</p>
-          <h1>Intégratrice Web - Scrum Master</h1>
-          <p class="textGrey">Je suis prête à mettre mes compétences et mon sens des responsabilités au service de projets web.</p>
-        </div>
-        <img src="assets/hero-pic.png" alt="photo profil">
-      </div>
-    </section>
-  
-  
-    <!--------------------- SECTION PROJETS ------------------->
-    <section class="marginSection" id="sectionProjet">
-      <div id="projet" class="marginSection" class="container">
+      </section>
+
+      <!--------------------- SECTION PROJETS ------------------->
+      <section class="marginSection" id="sectionProjet">
+        <div id="projet" class="marginSection" class="container">
           <section>
-              <p class="h2Pstyle" class="beigeDore" id="projets">Collaborative</p>
-              <h2>Mes Projets</h2>
+            <p class="h2Pstyle" class="beigeDore" id="projets">Collaborative</p>
+            <h2>Mes Projets</h2>
           </section>
 
-          <section id="SectionCard">
-              <article class="card">
-                  <a href="assets/wireframeBlack1.png"><img src="assets/wireframeBlack1.png"
-                          alt="wireframe" /></a>
+          <section class="sectionCard">
+            <article class="card">
+              <img src="assets/wireframeBlack1.png" alt="wireframe" />
 
-                  <h3>Maquette N°1</h3>
-                  <p  class="textGrey">Intégration.</p>
+              <h3>Maquette N°1</h3>
+              <p class="textGrey">Intégration.</p>
 
-                  <button id="toggleBtn1">En Savoir plus -> </button>
-                  <div id="monpopover1" class="card">Intégration d'une maquette avec HTML et CSS
-                      <img src="assets/projet2.png" alt="maquette">
-                      <a href=" https://hasnakharboucheameziane.github.io/renduHTMLCSS/" target="_blank"
-                          rel="noopener noreferrer">Voir le site</a>
-                  </div>
+              <button id="toggleBtn1">En Savoir plus -></button>
+              <div id="monpopover1" class="card">
+                Intégration d'une maquette avec HTML et CSS
+                <img src="assets/projet2.png" alt="maquette" />
+                <a
+                  href=" https://hasnakharboucheameziane.github.io/renduHTMLCSS/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir le site</a
+                >
+              </div>
+            </article>
 
-              </article>
+            <article class="card">
+              <img src="assets/wireframeBlack2.png" alt="wireframe" />
+              <h3>Maquette N°2</h3>
+              <p class="textGrey">Intégration.</p>
 
-              <article class="card">
-                  <a href="assets/wireframeBlack2.png"><img src="assets/wireframeBlack2.png"
-                          alt="wireframe" /></a>
-                  <h3>Maquette N°2</h3>
-                  <p  class="textGrey">Intégration.</p>
+              <button id="toggleBtn2">En Savoir plus -></button>
+              <div id="monpopover2" class="card">
+                Intégration d'une maquette avec HTML et CSS
+                <img src="assets/projet1.png" alt="maquette" />
+                <a
+                  href="https://hasnakharboucheameziane.github.io/ExerciceFlexBox/"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir le site</a
+                >
+              </div>
+            </article>
 
-                  <button id="toggleBtn2">En Savoir plus -> </button>
-                  <div id="monpopover2" class="card">Intégration d'une maquette avec HTML et CSS
-                      <img src="assets/projet1.png" alt="maquette">
-                      <a href="https://hasnakharboucheameziane.github.io/ExerciceFlexBox/" target="_blank"
-                          rel="noopener noreferrer">Voir le site</a>
-                  </div>
-              </article>
+            <article class="card">
+              <img src="assets/wireFrameMobile.png" alt="wireframe" />
+              <h3>Maquette N°3</h3>
+              <p class="textGrey">Prototypage.</p>
 
-              <article class="card">
-                  <a href="assets/wireFrameMobile.png"><img src="assets/wireFrameMobile.png"
-                          alt="wireframe" /></a>
-                  <h3>Maquette N°3</h3>
-                  <p  class="textGrey">Prototypage.</p>
-
-                  <button id="toggleBtn3">En Savoir plus -> </button>
-                  <div id="monpopover3" class="card">Prototype d'une application mobile (en cours)
-                      <img src="assets/prototypeMobile.png" alt="maquette mobile">
-                      <a href="https://www.figma.com/design/zsmjxr8EK2KcDEMLl5R0Sz/WireFrames?node-id=64-17966&t=L3uvuOA3bTAc8Zjh-1" target="_blank"
-                          rel="noopener noreferrer">Voir Figma</a>
-                          <a class="a2popover"  href="https://github.com/HasnaKharboucheAmeziane/mockupMobile" target="_blank"
-                          rel="noopener noreferrer">Voir GitHub</a>
-                  </div>
-              </article>
-             
-              <article class="card">
-                  <a href="assets/mobileTroVit.png"><img src="assets/mobileTroVit.png"
-                          alt="wireframe" /></a>
-
-                  <h3>Création site Web</h3>
-                  <p  class="textGrey">Intégration d'une API.</p>
-
-                  <button id="toggleBtn4">En Savoir plus -> </button>
-                  <div id="monpopover4" class="card">Intégration dynamique de données (fichier JSON) et création du site web.
-                      <img src="assets/logoTroVit.png" alt="maquette">
-                      <a href=" https://hasnakharboucheameziane.github.io/renduJsFinal" target="_blank"
-                          rel="noopener noreferrer">Voir le site</a>
-                  </div>
-
-              </article>
-
+              <button id="toggleBtn3">En Savoir plus -></button>
+              <div id="monpopover3" class="card">
+                Prototype d'une application mobile (en cours)
+                <img src="assets/prototypeMobile.png" alt="maquette mobile" />
+                <a
+                  href="https://www.figma.com/design/zsmjxr8EK2KcDEMLl5R0Sz/WireFrames?node-id=64-17966&t=L3uvuOA3bTAc8Zjh-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir Figma</a
+                >
+                <a
+                  class="a2popover"
+                  href="https://github.com/HasnaKharboucheAmeziane/mockupMobile"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir GitHub</a
+                >
+              </div>
+            </article>
           </section>
-      </div>
+          <br />
+          <section class="sectionCard">
+            <article class="card">
+              <img
+                src="assets/mobileTroVit.png"
+                alt="photo heros section du site"
+              />
 
-  </section>
+              <h3>Création site Web</h3>
+              <p class="textGrey">Intégration d'une API.</p>
 
-    <!-- ----------------------SECTION COMPETENCE--------------------------- -->
+              <button id="toggleBtn4">En Savoir plus -></button>
+              <div id="monpopover4" class="card">
+                Intégration dynamique de données (fichier JSON) et création du
+                site web avec HTML, CSS et JavaScript.
+                <img src="assets/logoTroVit.png" alt="maquette" />
+                <a
+                  href=" https://hasnakharboucheameziane.github.io/renduJsFinal"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir le site</a
+                >
+              </div>
+            </article>
 
-    <section class="marginSection">
-      <div id="competences" class="container" class="grey">
+            <article class="card">
+              <img src="assets/dashboardBgame.png" alt="logo Bgame" />
+
+              <h3>Prototype</h3>
+              <p class="textGrey">Conception UX UI Figma.</p>
+
+              <button id="toggleBtn5">En Savoir plus -></button>
+              <div id="monpopover5" class="card">
+                Wireframes et prototypes hautes fidélités d'un outil d'unboarding sur Figma.
+                <img src="assets/logoBgame.png" alt="maquette" />
+                <a
+                  href="https://www.figma.com/design/4hdqvRG2acNlqlRTNqWSCU/OnboardGame?node-id=0-1&t=vxabMxWmmMq9SLfD-1"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir le Figma</a
+                >
+              </div>
+            </article>
+
+            <article class="card">
+              <img
+                src="assets/logoKidsDigital.png"
+                alt="logo extension navigateur kids digital"
+              />
+
+              <h3>Extension navigateur</h3>
+              <p class="textGrey">Kids Digital.</p>
+
+              <button id="toggleBtn6">En Savoir plus -></button>
+              <div id="monpopover6" class="card">
+                Extension navigateur Chrome avec HTML, CSS, JavaScript (Fichier Manifest).
+                <img src="assets/logoKidsDigital.png" alt="maquette" />
+                <a
+                  href="https://www.youtube.com/watch?v=KcMOW44Mswo"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  >Voir la Démo</a
+                >
+              </div>
+            </article>
+          </section>
+        </div>
+      </section>
+
+      <!-- ----------------------SECTION COMPETENCE--------------------------- -->
+
+      <section class="marginSection">
+        <div id="competences" class="container" class="grey">
           <section>
-              <p class="h2Pstyle" class="beigeDore">Curieuse</p>
-              <h2>Compétences Développement Web</h2>
+            <p class="h2Pstyle" class="beigeDore">Curieuse</p>
+            <h2>Compétences Développement Web</h2>
           </section>
 
           <section id="sectionFigCap">
-              <figure class="figCap">
-                  <img src="assets/html-5.png" alt="icône HTML" />
-                  <figcaption>Html</figcaption>
-              </figure>
+            <figure class="figCap">
+              <img src="assets/html-5.png" alt="icône HTML" />
+              <figcaption>Html</figcaption>
+            </figure>
 
-              <figure class="figCap">
-                  <img src="assets/css-3.png" alt="icône CSS" />
-                  <figcaption>CSS</figcaption>
-              </figure>
+            <figure class="figCap">
+              <img src="assets/css-3.png" alt="icône CSS" />
+              <figcaption>CSS</figcaption>
+            </figure>
 
-              <figure class="figCap">
-                  <img src="assets/js.png" alt="icône JavaScript" />
-                  <figcaption>JavaScript</figcaption>
-              </figure>
-              <figure class="figCap">
-                  <img src="assets/wordpress.png" alt="icône wordPress" />
-                  <figcaption>WordPress</figcaption>
-              </figure>
+            <figure class="figCap">
+              <img src="assets/js.png" alt="icône JavaScript" />
+              <figcaption>JavaScript</figcaption>
+            </figure>
+            <figure class="figCap">
+              <img src="assets/wordpress.png" alt="icône wordPress" />
+              <figcaption>WordPress</figcaption>
+            </figure>
           </section>
-      </div>
-  </section>
-    <!-- -----------------------------------------------UI UX--------------------- -->
+        </div>
+      </section>
+      <!-- -----------------------------------------------UI UX--------------------- -->
 
-    <section class="marginSection">
-      <div id="competencesUi" class="container" class="grey">
-        <section>
-          <p class="h2Pstyle" class="beigeDore">Créative</p>
-          <h2>Compétences UI UX</h2>
-        </section>
+      <section class="marginSection">
+        <div id="competencesUi" class="container" class="grey">
+          <section>
+            <p class="h2Pstyle" class="beigeDore">Créative</p>
+            <h2>Compétences UI UX</h2>
+          </section>
 
-        <section id="sectionFigCap">
-          <figure class="figCap">
-            <img src="assets/logoFigma.png" alt="icône Figma" />
-            <figcaption>Figma</figcaption>
-          </figure>
+          <section id="sectionFigCap">
+            <figure class="figCap">
+              <img src="assets/logoFigma.png" alt="icône Figma" />
+              <figcaption>Figma</figcaption>
+            </figure>
 
-          <figure class="figCap">
-            <img src="assets/icons8-notion.svg " alt="icône Notion" />
-            <figcaption>Notion</figcaption>
-          </figure>
+            <figure class="figCap">
+              <img src="assets/icons8-notion.svg " alt="icône Notion" />
+              <figcaption>Notion</figcaption>
+            </figure>
 
-          <figure class="figCap">
-            <img src="assets/icons8-toile.svg" alt="icône Canva" />
-            <figcaption>Canva</figcaption>
-          </figure>
-        </section>
-      </div>
-    </section>
+            <figure class="figCap">
+              <img src="assets/icons8-toile.svg" alt="icône Canva" />
+              <figcaption>Canva</figcaption>
+            </figure>
+          </section>
+        </div>
+      </section>
 
-    <!-- --------------------SECTION A PROPOS-------------------- -->
-    <section class="marginSection" id="sectionAPropos">
-      <div id="aPropos" class="imgText" class="container" class="grey">
-        <section>
-          <p class="h2Pstyle" class="beigeDore">Résiliente</p>
-          <h2>Mieux me connaitre</h2>
-          <cite>"Le véritable changement commence le jour où l’on décide de passer à l’action."
-            Moi</cite>
-            <p class="textGrey"> Il y a deux ans, j’ai fait ce choix en entamant ma réorientation professionnelle. <br>A la suite de cette décision, j'ai pu bénéficier d'un accompagnement structuré autour d’un bilan de compétences, de tests de détection de potentiel et d’enquêtes métiers. Cette expérience m’a permis de mieux me connaitre et d’identifier clairement ma voie. 
-              <br>Depuis, je me forme activement et je me consacre à transformer des maquettes en interfaces web précises, accessibles et fonctionnelles.
-          </p>
-        </section>
-        <img id="imgProfil" src="assets/imgProfil1.png" alt="">
-      </div>
-    </section>
-    <!---------------------SECTION PARCOURS----------------------- -->
-    <section class="marginSection">
-      <div id="monParcours" class="imgText" class="grey" class="container">
-        <img src="assets/imgPuzzle.jpg" alt="photo décorative" class="marginBottomSection" class="container">
-        <section class="text">
-          <p class="h2Pstyle" class="beigeDore">Adaptable</p>
-          <h2>Mon Parcours</h2>
-          <p>Engagée, responsable, tournée vers une communication transparente ! </p><br>
-          <p class="textGrey"><br>
+      <!-- --------------------SECTION A PROPOS-------------------- -->
+      <section class="marginSection" id="sectionAPropos">
+        <div id="aPropos" class="imgText" class="container" class="grey">
+          <section>
+            <p class="h2Pstyle" class="beigeDore">Résiliente</p>
+            <h2>Mieux me connaitre</h2>
+            <cite
+              >"Le véritable changement commence le jour où l’on décide de
+              passer à l’action." Moi</cite
+            >
+            <p class="textGrey">
+              Il y a deux ans, j’ai fait ce choix en entamant ma réorientation
+              professionnelle. <br />A la suite de cette décision, j'ai pu
+              bénéficier d'un accompagnement structuré autour d’un bilan de
+              compétences, de tests de détection de potentiel et d’enquêtes
+              métiers. Cette expérience m’a permis de mieux me connaitre et
+              d’identifier clairement ma voie. <br />Depuis, je me forme
+              activement et je me consacre à transformer des maquettes en
+              interfaces web précises, accessibles et fonctionnelles.
+            </p>
+          </section>
+          <img id="imgProfil" src="assets/imgProfil1.png" alt="" />
+        </div>
+      </section>
+      <!---------------------SECTION PARCOURS----------------------- -->
+      <section class="marginSection">
+        <div id="monParcours" class="imgText" class="grey" class="container">
+          <img
+            src="assets/imgPuzzle.jpg"
+            alt="photo décorative"
+            class="marginBottomSection"
+            class="container"
+          />
+          <section class="text">
+            <p class="h2Pstyle" class="beigeDore">Adaptable</p>
+            <h2>Mon Parcours</h2>
+            <p>
+              Engagée, responsable, tournée vers une communication transparente
+              !
+            </p>
+            <br />
+            <p class="textGrey">
+              <br />
 
-            Après une carrière de 10 ans en tant qu’assistante médicale responsable, où j’ai coordonné une
-            équipe et instauré une relation de confiance avec les patients, j’ai choisi de me réorienter
-            dans le développement web. <br>
+              Après une carrière de 10 ans en tant qu’assistante médicale
+              responsable, où j’ai coordonné une équipe et instauré une relation
+              de confiance avec les patients, j’ai choisi de me réorienter dans
+              le développement web. <br />
 
-            Depuis 2023, je construis pas à pas une nouvelle expertise technique via des formations
-            certifiantes (Simplon, Ada Tech School, EmLyon Business School), des projets concrets (sites web, extensions navigateur, intégration API) et des expériences terrain, notamment en tant que développeuse web dans une association. <br>
+              Depuis 2023, je construis pas à pas une nouvelle expertise
+              technique via des formations certifiantes (Simplon, Ada Tech
+              School, EmLyon Business School), des projets concrets (sites web,
+              extensions navigateur, intégration API) et des expériences
+              terrain, notamment en tant que développeuse web dans une
+              association. <br />
 
-            J'ai décidé de me spécialiser dans l’intégration web, avec une sensibilité forte pour l’accessibilité, la rigueur du code et la collaboration agile.</p>
-        </section>
-      </div>
-    </section>
-    <!----------------------SECTION OBJECTIF----------------------- -->
+              J'ai décidé de me spécialiser dans l’intégration web, avec une
+              sensibilité forte pour l’accessibilité, la rigueur du code et la
+              collaboration agile.
+            </p>
+          </section>
+        </div>
+      </section>
+      <!----------------------SECTION OBJECTIF----------------------- -->
 
-    <section class="marginSection">
-      <div id="objectif" class="imgText" class="container" class="grey">
-        <section>
-          <p class="h2Pstyle" class="beigeDore">Persévérante</p>
-          <h2>Mes Objectifs</h2>
-          <p class="textGrey">Je vise à développer une expertise solide en intégration web afin de traduire fidèlement des
-            maquettes en interfaces accessibles, performantes et optimisées pour l’utilisateur. Mon ambition
-            est de participer à des projets qui rendent le numérique plus intuitif et utile au quotidien, en
-            collaborant étroitement avec les équipes. À travers ce rôle, je souhaite contribuer à des
-            produits qui ont un réel impact positif sur la vie des gens. </p>
-        </section>
-        <img src="assets/objects.png" alt="photo objectif en escalierObj">
-      </div>
-    </section>
+      <section class="marginSection">
+        <div id="objectif" class="imgText" class="container" class="grey">
+          <section>
+            <p class="h2Pstyle" class="beigeDore">Persévérante</p>
+            <h2>Mes Objectifs</h2>
+            <p class="textGrey">
+              Je vise à développer une expertise solide en intégration web afin
+              de traduire fidèlement des maquettes en interfaces accessibles,
+              performantes et optimisées pour l’utilisateur. Mon ambition est de
+              participer à des projets qui rendent le numérique plus intuitif et
+              utile au quotidien, en collaborant étroitement avec les équipes. À
+              travers ce rôle, je souhaite contribuer à des produits qui ont un
+              réel impact positif sur la vie des gens.
+            </p>
+          </section>
+          <img src="assets/objects.png" alt="photo objectif en escalierObj" />
+        </div>
+      </section>
 
-    <!--------------------- SECTION CONTACT--------------------->
-    <!-- <section id="grandeSectionContact" class="marginSection">
+      <!--------------------- SECTION CONTACT--------------------->
+      <!-- <section id="grandeSectionContact" class="marginSection">
       <div id="contact" class="container">
 
         <div id="pContact">
@@ -315,7 +416,7 @@
             /></a>
         </div> -->
 
-        <!-- <section id="mailLinkedin">
+      <!-- <section id="mailLinkedin">
                     <a href="mailto:hasnakharbouchepro@gmail.com">hasnakharbouchepro@gmail.com</a>
                     <section id="reseaux">
                         <figure>
@@ -326,8 +427,7 @@
                     </section>
                 </section> -->
 
-
-        <!-- <form action="mailto:hasnakharbouchepro@gmail.com" method="POST" enctype="text/plain">
+      <!-- <form action="mailto:hasnakharbouchepro@gmail.com" method="POST" enctype="text/plain">
           <section id="sectionNomMail">
             <section>
               <label for="Nom">Nom</label>
@@ -352,9 +452,9 @@
 
         </form> -->
 
-        <!-- ------------------------------form2 SECURISÉ-------------------------------- -->
+      <!-- ------------------------------form2 SECURISÉ-------------------------------- -->
 
-        <!-- <form action="mailto:hasnakharbouchepro@gmail.com" method="POST">
+      <!-- <form action="mailto:hasnakharbouchepro@gmail.com" method="POST">
           <section id="sectionNomMail">
             <section>
               <label for="Nom">Nom</label><br>
@@ -381,13 +481,12 @@
     </section>
 
     <section  id="haut" class="retour"> -->
-        <!-- <a href="index.html">⬆</a> --> 
-    <!-- </section>  -->
+      <!-- <a href="index.html">⬆</a> -->
+      <!-- </section>  -->
+    </main>
 
-  </main>
-
-  <!-------------------------------- FOOTER ----------------------------------------------------->
-  <!-- <footer class="grey">
+    <!-------------------------------- FOOTER ----------------------------------------------------->
+    <!-- <footer class="grey">
 
     <a href="index.html"><img id="logo" src="assets/logo.png" alt="photo logo"></a>
 
@@ -415,50 +514,64 @@
 
   </footer> -->
 
-  <footer id="footer" class="grey">
-    <div class="container">
-      <div class="row1">
-        <div class="f-left">
-          <a class="logo-container" href="index.html"><img src="assets/logo.png" alt="photo logo"></a>
-          <div class="socials">
-            <a href="mailto:hasnakharbouchepro@gmail.com">hasnakharbouchepro@gmail.com</a>
-            <!-- <a href="https://www.linkedin.com/in/hasnakharbouche/"><img src="assets/icons8-linkedin (3).svg"
+    <footer id="footer" class="grey">
+      <div class="container">
+        <div class="row1">
+          <div class="f-left">
+            <a class="logo-container" href="index.html"
+              ><img src="assets/logo.png" alt="photo logo"
+            /></a>
+            <div class="socials">
+              <a href="mailto:hasnakharbouchepro@gmail.com"
+                >hasnakharbouchepro@gmail.com</a
+              >
+              <!-- <a href="https://www.linkedin.com/in/hasnakharbouche/"><img src="assets/icons8-linkedin (3).svg"
                 alt="logo linkedin cliquable"></a> -->
-<div id="iconsSocials">
+              <div id="iconsSocials">
                 <figure class="figCap">
-                  <a href="https://www.linkedin.com/in/hasnakharbouche/"><img src="assets/icons8-linkedin (3).svg" alt="logo Linkedin cliquable"></a>
+                  <a href="https://www.linkedin.com/in/hasnakharbouche/"
+                    ><img
+                      src="assets/icons8-linkedin (3).svg"
+                      alt="logo Linkedin cliquable"
+                  /></a>
                   <figcaption>Linkedin</figcaption>
-              </figure>
+                </figure>
 
-              <figure class="figCap">
-                <a href="https://github.com/HasnaKharboucheAmeziane"><img src="assets/iconeGitHub.png" alt="logo github cliquable"></a>
-                <figcaption>GitHub</figcaption>
-            </figure>
+                <figure class="figCap">
+                  <a href="https://github.com/HasnaKharboucheAmeziane"
+                    ><img
+                      src="assets/iconeGitHub.png"
+                      alt="logo github cliquable"
+                  /></a>
+                  <figcaption>GitHub</figcaption>
+                </figure>
+              </div>
+            </div>
           </div>
-
+          <div class="f-middle">
+            <h2>Navigation</h2>
+            <a href="#sectionProjet">Mes Projets</a>
+            <a href="#competences">Mes Compétences</a>
+            <a href="#sectionAPropos">A Propos</a>
+            <a href="#monParcours">Mon Parcours</a>
+            <a href="#contact">Contact</a>
+          </div>
+          <div class="f-right">
+            <a class="button" href="mailto:hasnakharbouchepro@gmail.com"
+              >M'envoyer un Email</a
+            >
+            <p><a href="tel:+33625563904">+33(0)6 25 56 39 04</a></p>
           </div>
         </div>
-        <div class="f-middle">
-          <h2>Navigation</h2>
-          <a href="#sectionProjet">Mes Projets</a>
-          <a href="#competences">Mes Compétences</a>
-          <a href="#sectionAPropos">A Propos</a>
-          <a href="#monParcours">Mon Parcours</a>
-          <a href="#contact">Contact</a>
-        </div>
-        <div class="f-right">
-          <a class="button" href="mailto:hasnakharbouchepro@gmail.com">M'envoyer un Email</a>
-          <p><a href="tel:+33625563904">+33(0)6 25 56 39 04</a></p>
+        <div class="row2">
+          <p>© 2025 Hasna Kharbouche. Tous droits réservés.</p>
+          <a href="https://mentions-legales-doih1pi.gamma.site"
+            >Mentions légales</a
+          >
         </div>
       </div>
-      <div class="row2">
-        <p>© 2025 Hasna Kharbouche. Tous droits réservés.</p>
-        <a href="https://mentions-legales-doih1pi.gamma.site">Mentions légales</a>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script src="script.js"></script>
-</body>
-
+    <script src="script.js"></script>
+  </body>
 </html>

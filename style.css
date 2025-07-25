@@ -176,7 +176,7 @@ main {
   padding-bottom: 20%;
 }
 
-#SectionCard {
+.sectionCard {
   display: flex;
   justify-content: center;
   gap: 5%;
@@ -215,12 +215,13 @@ button {
   padding: 11px 22px;
   margin-top: 31%;
   background-color: #292c31;
+  cursor: pointer;
 }
 
 .card {
   color: #333333;
   /* box-shadow: 0 4px 15px 5px #e6d6d629; */
-  width: 30%;
+  width: 500px;
   padding: 5%;
   border: 2px solid #c2a87d15;
   /* Couleur de base de la bordure */
@@ -484,7 +485,9 @@ Footer {
 #monpopover1,
 #monpopover2,
 #monpopover3,
- #monpopover4 {
+ #monpopover4,
+  #monpopover5,
+  #monpopover6 {
   text-align: center;
   background-color: #21242a;
   color: #c2a77d;
@@ -532,6 +535,15 @@ Footer {
   margin-left: 30%;
 }
 
+#monpopover5{
+   margin-top: 6%;
+  margin-left: 30%;
+}
+
+#monpopover6{
+   margin-top: 6%;
+  margin-left: 30%;
+}
 /* ------------------------------------------------MOBILE 650-------------------------------------- */
 
 @media screen and (max-width: 650px) {
@@ -659,7 +671,7 @@ Footer {
 
   /* -------------------------------------PROJETS--------------------  */
 
-  #SectionCard {
+  .sectionCard {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -690,7 +702,9 @@ Footer {
   #monpopover1,
   #monpopover2,
   #monpopover3,
-   #monpopover4{
+   #monpopover4,
+   #monpopover5,
+   #monpopover6{
     text-align: center;
     background-color: #21242a;
     color: #c2a77d;

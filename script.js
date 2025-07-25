@@ -10,6 +10,12 @@ const popover3 = document.getElementById("monpopover3");
 const toggleBtn4 = document.getElementById("toggleBtn4");
 const popover4 = document.getElementById("monpopover4");
 
+const toggleBtn5 = document.getElementById("toggleBtn5");
+const popover5 = document.getElementById("monpopover5");
+
+const toggleBtn6 = document.getElementById("toggleBtn6");
+const popover6 = document.getElementById("monpopover6");
+
 
 
 // Vérifie la prise en charge de Popover.
@@ -38,6 +44,14 @@ if (supportsPopover()) {
   toggleBtn4.popoverTargetElement = popover4;
   toggleBtn4.popoverTargetAction = "toggle";
 
+  popover5.popover = "auto";
+  toggleBtn5.popoverTargetElement = popover5;
+  toggleBtn5.popoverTargetAction = "toggle";
+
+  popover6.popover = "auto";
+  toggleBtn6.popoverTargetElement = popover6;
+  toggleBtn6.popoverTargetAction = "toggle";
+
 
 } else {
   popover1.textContent = "L'API Popover n'est pas prise en charge.";
@@ -51,6 +65,12 @@ if (supportsPopover()) {
 
   popover4.textContent = "L'API Popover n'est pas prise en charge.";
   toggleBtn4.hidden = true;
+
+  popover5.textContent = "L'API Popover n'est pas prise en charge.";
+  toggleBtn5.hidden = true;
+
+  popover6.textContent = "L'API Popover n'est pas prise en charge.";
+  toggleBtn6.hidden = true;
 }
 
 // ------------------------------------MENU BURGER-----------------------------------------
