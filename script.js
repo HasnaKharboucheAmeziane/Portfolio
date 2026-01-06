@@ -97,4 +97,64 @@ document.addEventListener("click", (e) => {
 
 // ------------------------formulaire reçu---------------------
 
+
+// -------------------------ChatBot------------------------------
  
+
+async function envoyerMessage(message) {
+  const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
+    method: "POST",
+    headers: {
+      "Content-Type": "application/json"
+    },
+    body: JSON.stringify({ message: message })
+  });
+
+  const data = await response.json();
+  console.log("Réponse du chatbot :", data.reply);
+}
+
+
+
+
+
+const chatbox = document.getElementById("chatbox");
+const sendBtn = document.getElementById("sendBtn");
+const userInput = document.getElementById("userInput");
+
+function addMessage(text, sender) {
+    const msg = document.createElement("div");
+    msg.classList.add("message", sender);
+    msg.textContent = text;
+    chatbox.appendChild(msg);
+    chatbox.scrollTop = chatbox.scrollHeight;
+}
+
+async function sendMessage() {
+    const message = userInput.value.trim();
+    if (!message) return;
+
+    addMessage(message, "user");
+    userInput.value = "";
+
+    try {
+        const response = await fetch("TON_URL_WEBHOOK", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ message: message })
+        });
+
+        const data = await response.json();
+        addMessage(data.reply, "bot");
+
+    } catch (error) {
+        addMessage("Erreur de connexion au serveur.", "bot");
+    }
+}
+
+sendBtn.addEventListener("click", sendMessage);
+
+userInput.addEventListener("keypress", function(e) {
+    if (e.key === "Enter") sendMessage();
+});
+
