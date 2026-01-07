@@ -16,8 +16,6 @@ const popover5 = document.getElementById("monpopover5");
 const toggleBtn6 = document.getElementById("toggleBtn6");
 const popover6 = document.getElementById("monpopover6");
 
-
-
 // Vérifie la prise en charge de Popover.
 function supportsPopover() {
   return HTMLElement.prototype.hasOwnProperty("popover");
@@ -51,8 +49,6 @@ if (supportsPopover()) {
   popover6.popover = "auto";
   toggleBtn6.popoverTargetElement = popover6;
   toggleBtn6.popoverTargetAction = "toggle";
-
-
 } else {
   popover1.textContent = "L'API Popover n'est pas prise en charge.";
   toggleBtn1.hidden = true;
@@ -94,67 +90,93 @@ document.addEventListener("click", (e) => {
   }
 });
 
-
 // ------------------------formulaire reçu---------------------
 
-
 // -------------------------ChatBot------------------------------
- 
 
-async function envoyerMessage(message) {
-  const response = await fetch("https://api.mistral.ai/v1/chat/completions", {
-    method: "POST",
-    headers: {
-      "Content-Type": "application/json"
-    },
-    body: JSON.stringify({ message: message })
-  });
+// const chatbox = document.getElementById("chatbox");
+// const sendBtn = document.getElementById("sendBtn");
+// const userInput = document.getElementById("userInput");
 
-  const data = await response.json();
-  console.log("Réponse du chatbot :", data.reply);
-}
+// function addMessage(text, sender) {
+//   const msg = document.createElement("div");
+//   msg.classList.add("message", sender);
+//   msg.textContent = text;
+//   chatbox.appendChild(msg);
+//   chatbox.scrollTop = chatbox.scrollHeight;
+// }
 
+// async function sendMessage() {
+//   const message = userInput.value.trim();
+//   if (!message) return;
 
+//   addMessage(message, "user");
+//   userInput.value = "";
 
+//   try {
+//     const response = await fetch(
+//       "https://hasnakharbouche.app.n8n.cloud/webhook-test/3d30434e-4798-4893-985f-0e809f756769",
+//       {
+//         method: "POST",
+//         headers: { "Content-Type": "application/json" },
+//         body: JSON.stringify({ message: message }),
+//       }
+//     );
 
+//     const data = await response.text();
+//     addMessage(data, "bot");
+//   } catch (error) {
+//     addMessage("Erreur de connexion au serveur.", "bot");
+//   }
+// }
+
+// sendBtn.addEventListener("click", sendMessage);
+
+// userInput.addEventListener("keypress", function (e) {
+//   if (e.key === "Enter") sendMessage();
+// });
+
+// {   "reply": "={{$json.choices[0].message.content}}" }
+
+// --------------------------------cxhatbot MES DONNEES---------------
 
 const chatbox = document.getElementById("chatbox");
 const sendBtn = document.getElementById("sendBtn");
 const userInput = document.getElementById("userInput");
 
 function addMessage(text, sender) {
-    const msg = document.createElement("div");
-    msg.classList.add("message", sender);
-    msg.textContent = text;
-    chatbox.appendChild(msg);
-    chatbox.scrollTop = chatbox.scrollHeight;
+  const msg = document.createElement("div");
+  msg.classList.add("message", sender);
+  msg.textContent = text;
+  chatbox.appendChild(msg);
+  chatbox.scrollTop = chatbox.scrollHeight;
 }
 
 async function sendMessage() {
-    const message = userInput.value.trim();
-    if (!message) return;
+  // Ton texte directement ici :
+  const message = "bonjour, coucou, salut";
 
-    addMessage(message, "user");
-    userInput.value = "";
+  addMessage(message, "user");
 
-    try {
-        const response = await fetch("TON_URL_WEBHOOK", {
-            method: "POST",
-            headers: { "Content-Type": "application/json" },
-            body: JSON.stringify({ message: message })
-        });
+  try {
+    const response = await fetch("https://hasnakharbouche.app.n8n.cloud/webhook/chatbot", {
+      method: "POST",
+      headers: { "Content-Type": "application/json" },
+      body: JSON.stringify({ message })
+    });
 
-        const data = await response.json();
-        addMessage(data.reply, "bot");
+    const data = await response.json();
+    addMessage(data.reply, "bot");
 
-    } catch (error) {
-        addMessage("Erreur de connexion au serveur.", "bot");
-    }
+  } catch (error) {
+    addMessage("Erreur de connexion au serveur.", "bot");
+  }
 }
 
+// Envoi automatique du message dès que tu cliques
 sendBtn.addEventListener("click", sendMessage);
 
-userInput.addEventListener("keypress", function(e) {
-    if (e.key === "Enter") sendMessage();
+// Ou avec la touche Entrée
+userInput.addEventListener("keypress", function (e) {
+  if (e.key === "Enter") sendMessage();
 });
-
